@@ -16,6 +16,8 @@
 .Body {
   width: 960px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -23,7 +25,6 @@ button {
   letter-spacing: 1.5px;
   height: 40px;
   width: 118px;
-  text-decoration: none !important;
   text-transform: uppercase;
   transition: all .3s;
   color: #fff;
@@ -34,6 +35,12 @@ button {
   outline: none;
   text-shadow: none;
   padding: 1px 15px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0088cc;
+  cursor: pointer;
 }
 
 img {
@@ -48,6 +55,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 29px;
 }
 
 .Date-Title {
@@ -57,10 +65,11 @@ img {
 }
 
 .Title {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
-  line-height: 31.85px;
-  text-size-adjust: 100%;
+  line-height: 32px;
+  text-size-adjust:100%;
+  text-rendering:optimizeLegibility;
   margin-left: 32px;
 }
 
@@ -78,10 +87,35 @@ img {
 .Month {
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 1.5px;
   font-size: 14px;
+  text-align: center;
 }
 
 .Day {
   font-size: 28px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.Table {
+  border: 2px solid rgb(243, 243, 243);
+}
+
+.Table h4 {
+  color: rgb(1, 161, 221);
+  font-weight: 800;
+  font-size: 13px;
+  margin: 24px 0px 10px 37px;
   letter-spacing: 1.5px;
+}
+
+hr {
+  border: .5px solid  rgb(229, 229, 229);
+  width: 920px;
+  margin: 0 20px;
+}
+
+table {
+  font-size: 12px;
 }
