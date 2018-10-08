@@ -1,16 +1,10 @@
 .App {
   background-color: #fff;
-  height: 1125px;
   width: 1025px;
   border: 1px solid black;
   color: rgb(85, 85, 85);
   margin: auto;
   margin-top: 210px;
-  /* display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
 .Body {
@@ -99,7 +93,7 @@ img {
 }
 
 .Table {
-  border: 2px solid rgb(243, 243, 243);
+  border: 2px solid #F3F3F3;
 }
 
 .Table h4 {
@@ -111,11 +105,103 @@ img {
 }
 
 hr {
-  border: .5px solid  rgb(229, 229, 229);
+  border: .5px solid  #CCCCCC;
   width: 920px;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 table {
-  font-size: 12px;
+  font-size: 13px;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  padding-top: 10px;
+  text-align: 
+}
+
+th {
+  border-bottom: 2px solid rgb(1,161,221);
+  font-weight: 700;
+  text-align: bottom;
+}
+
+th:first-of-type {
+  padding-left: 53px;
+}
+
+tr td:first-of-type {
+  padding-left: 53px;
+}
+
+th:nth-child(2) {
+  padding-left: 100px;
+}
+
+tr td:nth-child(2) {
+  padding-left: 100px;
+}
+
+th:nth-child(3) {
+  padding-left: 100px;
+  width: 60px;
+}
+
+tr td:nth-child(3) {
+  padding-left: 100px;
+  width: 60px;
+}
+
+th:nth-child(4) {
+  padding-left: 50px;
+  width: 60px;
+}
+
+tr td:nth-child(4) {
+  padding-left: 50px;
+  width: 60px;
+}
+
+th:nth-child(5) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+tr td:nth-child(5) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+th:nth-child(6) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+tr td:nth-child(6) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+th:nth-child(7) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+tr td:nth-child(7) {
+  padding-left: 50px;
+  width: 80px;
+}
+
+tbody tr {
+  height: 63px;
+}
+
+tr td {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 0px 35px;
+  white-space:nowrap;
+}
+
+.Striped {
+  background-color: #F3F3F3;
 }

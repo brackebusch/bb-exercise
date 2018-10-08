@@ -1,9 +1,8 @@
 class WorkOrdersController < ApplicationController
   before_action :set_work_order, only: [:show, :update, :destroy]
-
   # GET /work_orders
   def index
-    @work_orders = WorkOrder.all
+    @work_orders = WorkOrder.all.order(:ship_date)
 
     render json: @work_orders
   end
