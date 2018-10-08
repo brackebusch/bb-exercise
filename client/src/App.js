@@ -2,7 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import moment from 'moment';
-import { Dialog, Combobox } from 'evergreen-ui'
+import Modal from 'react-modal';
+
+const customStyles = {
+  content : {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '650px',
+    height: '550px',
+  }
+};
 
 class App extends Component {
   state = {data: false, index: 0, showModal: false}
@@ -30,36 +43,91 @@ class App extends Component {
             {this.state.data[i].priority ? ' ★' : ''}
           </td>
           <td className='Order'>#{this.state.data[i].id}</td>
-          <td><i class='fas fa-eye'></i></td>
+          <td><i className='fas fa-eye'></i></td>
         </tr>
       )
     }
     return rows
   }
 
-  modalState() {
-    console.log(this.state.data);
-    // console.log(this.state)
-    // this.setState({show: !this.state.showModal})
+  changeModalState() {
+    this.setState({showModal: !this.state.showModal})
+  }
+
+  saveAndClose() {
+    this.setState({showModal: !this.state.showModal})
   }
 
   render() {
     return (
       <div className='App'>
-        <Dialog
-          isShown={this.state.show}
-          title='Perfectly Ground Work Orders'
-          confirmLabel='Custom Label'
-          >
-        Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.
-        <Combobox
-          defaultSelectedItem={{ label: 'Giant Steps' }}
-          items={[{ label: 'Bella Donovan' }, { label: 'Giant Steps' }]}
-          itemToString={item => item.label}
-          onChange={selected => console.log(selected)}
-        />
-        <button onClick={() => this.modalState}>SUBMIT WORK ORDER</button>
-        </Dialog>
+
+        <Modal
+          isOpen={this.state.showModal}
+          onRequestClose={() => this.changeModalState()}
+          style={customStyles}
+          contentLabel='Example Modal'
+        >
+        <span className='Close' onClick={() => this.changeModalState()}>&times;</span>
+        <div className='ModalBody'>
+          <span>Perfectly Ground Work Orders</span>
+          <br/>
+          Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.
+          <form>
+            <div className={'Inputs'}>
+              <div>Brew Method *</div>
+                <select className={'Select'}>
+                  <option value="Bella Donovan">Bella Donovan</option>
+                  <option value="Giant Steps">Giant Steps</option>
+                </select>
+            </div>
+            <div className={'Inputs'}>
+              <div>Brew Method *</div>
+                <select className={'Select'}>
+                  <option value="AeroPress">AeroPress</option>
+                  <option value="Coffee Maker">Coffee Maker</option>
+                  <option value="Cold Brew">Cold Brew</option>
+                  <option value="French Press">French Press</option>
+                  <option value="Pour Over">Pour Over</option>
+                </select>
+            </div>
+            <div className={'Inputs'}>
+              <div>Ship Date *</div>
+                <select className={'Select'}>
+                  <option value="Bella Donovan">Bella Donovan</option>
+                  <option value="Giant Steps">Giant Steps</option>
+                </select>
+            </div>
+            <div className={'InputsSmall'}>
+              <div>
+                <div>Number of Cases *</div>
+                <select className={'SelectSmall'}>
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+              <div>
+                <div>Packets per Case *</div>
+                <select className={'SelectSmall'}>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <button onClick={() => this.saveAndClose()}>SUBMIT WORK ORDER</button>
+        </div>
+        </Modal>
+
+
+
+
+
+
         <div className='Body'>
           <img src={logo} className='App-logo' alt='logo' />
 
@@ -71,8 +139,9 @@ class App extends Component {
               </div>
               <span className='Title'>Perfectly Ground Work Orders</span>
             </div>
-            <button onClick={() => this.modalState}>CREATE ORDER</button>
+            <button onClick={() => this.changeModalState()}>CREATE ORDER</button>
           </div>
+
           <div className='Table'>
             <h4>ORDERS</h4>
             <hr/>
@@ -83,7 +152,7 @@ class App extends Component {
                   <th><br/>Method</th>
                   <th>Number of Cases</th>
                   <th>Packets per Case</th>
-                  <th><br/>Ship Date <i class='fas fa-sort-amount-down'></i></th>
+                  <th><br/>Ship Date <i className='fas fa-sort-amount-down'></i></th>
                   <th><br/>Order</th>
                   <th><br/>View</th>
                 </tr>
@@ -93,6 +162,7 @@ class App extends Component {
               </tbody>
             </table>
           </div>
+
         </div>
       </div>
     );

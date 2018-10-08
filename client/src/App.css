@@ -230,3 +230,79 @@ td i {
 i:hover, .Order {
   cursor: pointer;
 }
+
+.Close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  margin: -10px -5px;
+}
+
+.Close:hover,
+.Close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ModalBody {
+  width: 600px;
+  margin: 16px auto;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ModalBody span {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.ModalBody button {
+  width: 180px;
+  padding: 1px 10px;
+}
+
+.Select {
+  padding: 5px 50px 0 10px;
+  color: #555;
+  width: 284px;
+  height: 36px;
+  vertical-align: middle;
+  align-items: center;
+  white-space: pre;
+  cursor: pointer;
+}
+
+.SelectSmall {
+  padding: 5px 50px 0 10px;
+  color: #555;
+  width: 132px;
+  height: 36px;
+  vertical-align: middle;
+  align-items: center;
+  white-space: pre;
+  cursor: pointer;
+}
+
+.Inputs {
+  width: 286px;
+  margin-top: 32px;
+}
+
+.InputsSmall {
+  width: 286px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.InputsSmall div div div {
+  width: 132px;
+}
