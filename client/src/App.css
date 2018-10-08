@@ -93,7 +93,7 @@ img {
 }
 
 .Table {
-  border: 2px solid #F3F3F3;
+  border: 2px solid #E6E6E6;
 }
 
 .Table h4 {
@@ -120,7 +120,7 @@ table {
 }
 
 th {
-  border-bottom: 2px solid rgb(1,161,221);
+  border-bottom: 2px solid #01A1DD;
   font-weight: 700;
   text-align: bottom;
 }
@@ -172,23 +172,23 @@ tr td:nth-child(5) {
 }
 
 th:nth-child(6) {
-  padding-left: 50px;
+  padding-left: 80px;
   width: 80px;
 }
 
 tr td:nth-child(6) {
-  padding-left: 50px;
+  padding-left: 80px;
   width: 80px;
 }
 
 th:nth-child(7) {
-  padding-left: 50px;
-  width: 80px;
+  padding-left: 30px;
+  width: 48px;
 }
 
 tr td:nth-child(7) {
-  padding-left: 50px;
-  width: 80px;
+  padding-left: 30px;
+  width: 48px;
 }
 
 tbody tr {
@@ -204,4 +204,29 @@ tr td {
 
 .Striped {
   background-color: #F3F3F3;
+}
+
+.Order {
+  color: #21BCE8;
+}
+
+.Star {
+  color: #999999;
+  vertical-align: middle;
+}
+
+i {
+  color: #ABABAB;
+}
+
+td i {
+  color: #01A1DD;
+}
+
+/* i:last-of-type {
+  color: #01A1DD;
+} */
+
+i:hover, .Order {
+  cursor: pointer;
 }
