@@ -31,7 +31,7 @@
 
 .ModalBody {
   width: 600px;
-  height: 550px;
+  height: 520px;
   margin: 16px auto;
   color: #555555;
   font-size: 14px;
@@ -70,16 +70,27 @@ form {
 #coffee, #method, #date {
   border-radius: 0px;
   width: 284px;
+  height: 36px;
 }
 
 #cases, #packets {
   border-radius: 0px;
   width: 132px;
+  height: 36px;
 } 
 
 #notes {
   border-radius: 0px;
   width: 580px;
+  height: 26px;
+}
+
+#priority {
+  font-size: 16px;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 .SmallSelect {
@@ -100,4 +111,8 @@ form {
 .Red {
   text-decoration: none;
   color: red;
+}
+
+.form-group {
+  margin-bottom: 25px;
 }

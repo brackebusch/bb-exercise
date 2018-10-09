@@ -1,8 +1,17 @@
 import React from 'react';
-import { Modal, FormGroup, FormControl, ControlLabel, Checkbox } from 'react-bootstrap'
+import { Modal, FormGroup, FormControl, ControlLabel, Checkbox } from 'react-bootstrap';
+import Datetime from 'react-datetime';
+import moment from 'moment'
 import './Modal.css';
+import './Datetime.css';
+
 
 const ModalView = ({changeModalState, showModal, saveAndClose}) => {
+
+  const yesterday = moment().subtract( 1, 'day' );
+  const valid = ( current ) => {
+    return current.isAfter(yesterday);
+  };
 
   return (
     <Modal show={showModal} onHide={changeModalState} dialogClassName="ModalContainer">
@@ -35,7 +44,14 @@ const ModalView = ({changeModalState, showModal, saveAndClose}) => {
    
         <FormGroup controlId="date">
           <ControlLabel>Ship Date <span className='Red'>*</span></ControlLabel>
-          <FormControl componentClass="date"/>
+            <Datetime 
+              dateFormat="YYYY-MM" 
+              timeFormat={false}
+              isValidDate={valid} 
+              disableOnClickOutside={true}
+              closeOnSelect={true}
+
+              />
         </FormGroup>
 
         <div className='SmallInputs'>
@@ -76,138 +92,3 @@ const ModalView = ({changeModalState, showModal, saveAndClose}) => {
 };
 
 export default ModalView
-
-
-
-{/* <div className='Inputs SmallInputs'>
-
-<div>
-  <div>Packets per Case <span className='Red'>*</span></div>
-  <select className='Select SmallSelect'>
-    <option value="25">25</option>
-    <option selected value="50">50</option>
-  </select>
-</div>          
-</div> */}
-
-
-{/* <div>
-<div>Number of Cases <span className='Red'>*</span></div>
-<select className='Select SmallSelect'>
-  <option value="" defaultValue disabled hidden>#</option>
-  <option value="1">1</option>
-  <option value="5">5</option>
-  <option value="10">10</option>
-  <option value="20">20</option>
-  <option value="50">50</option>
-  <option value="100">100</option>
-</select>
-</div> */}
-
-
-        {/* <div className='Inputs'>
-          <div>Coffee <span className='Red'>*</span></div>
-            <select className='Select'>
-              <option value="" defaultValue disabled hidden>Choose One</option>
-              <option value="Bella Donovan">Bella Donovan</option>
-              <option value="Giant Steps">Giant Steps</option>
-            </select>
-        </div> */}
-     {/* <div className='Inputs'>
-          <div>Brew Method <span className='Red'>*</span></div>
-            <select className='Select'>
-              <option value="" defaultValue disabled hidden>Choose One</option>
-              <option value="AeroPress">AeroPress</option>
-              <option value="Coffee Maker">Coffee Maker</option>
-              <option value="Cold Brew">Cold Brew</option>
-              <option value="French Press">French Press</option>
-              <option value="Pour Over">Pour Over</option>
-            </select>
-        </div> */}
-        {/* <div className='Inputs'>
-          <div>Ship Date <span className='Red'>*</span></div>
-            <select className='Select'>
-              <option value="Bella Donovan">Bella Donovan</option>
-              <option value="Giant Steps">Giant Steps</option>
-            </select>
-        </div> */}
-
-// import Modal from 'react-modal';
-
-// const customStyles = {
-//   content : {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     marginRight: '-50%',
-//     transform: 'translate(-50%, -50%)',
-//     width: '650px',
-//     height: '550px',
-//   }
-// };
-// const {level, message} = props;  
-
-// <Modal
-// isOpen={this.state.showModal}
-// onRequestClose={() => this.changeModalState()}
-// style={customStyles}
-// contentLabel='Example Modal'
-// >
-// <span className='Close' onClick={() => this.changeModalState()}>&times;</span>
-// <div className='ModalBody'>
-// <span>Perfectly Ground Work Orders</span>
-// <br/>
-// Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.
-// <form>
-//   <div className={'Inputs'}>
-//     <div>Brew Method *</div>
-//       <select className={'Select'}>
-//         <option value="" selected disabled hidden>Choose One</option>
-//         <option value="Bella Donovan">Bella Donovan</option>
-//         <option value="Giant Steps">Giant Steps</option>
-//       </select>
-//   </div>
-//   <div className={'Inputs'}>
-//     <div>Brew Method *</div>
-//       <select className={'Select'}>
-//         <option value="" selected disabled hidden>Choose One</option>
-//         <option value="AeroPress">AeroPress</option>
-//         <option value="Coffee Maker">Coffee Maker</option>
-//         <option value="Cold Brew">Cold Brew</option>
-//         <option value="French Press">French Press</option>
-//         <option value="Pour Over">Pour Over</option>
-//       </select>
-//   </div>
-//   <div className={'Inputs'}>
-//     <div>Ship Date *</div>
-//       <select className={'Select'}>
-//         <option value="Bella Donovan">Bella Donovan</option>
-//         <option value="Giant Steps">Giant Steps</option>
-//       </select>
-//   </div>
-//   <div className={'InputsSmall'}>
-//     <div>
-//       <div>Number of Cases *</div>
-//       <select className={'SelectSmall'}>
-//         <option value="" selected disabled hidden>#</option>
-//         <option value="1">1</option>
-//         <option value="5">5</option>
-//         <option value="10">10</option>
-//         <option value="20">20</option>
-//         <option value="50">50</option>
-//         <option value="100">100</option>
-//       </select>
-//     </div>
-//     <div>
-//       <div>Packets per Case *</div>
-//       <select className={'SelectSmall'}>
-//         <option value="25">25</option>
-//         <option selected value="50">50</option>
-//       </select>
-//     </div>
-//   </div>
-// </form>
-// <button onClick={() => this.saveAndClose()}>SUBMIT WORK ORDER</button>
-// </div>
-// </Modal>

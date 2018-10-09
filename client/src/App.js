@@ -77,10 +77,10 @@ class App extends Component {
       <div className='App'>
         <div className='Body'>
           <Header changeModalState={changeModalState} />
-          <Table  workOrders={workOrders.slice((page-1) * 25, (page-1) * 25 + 25)}/>
           <ModalView  showModal={showModal} 
-                      changeModalState={changeModalState} 
+                      changeModalState={changeModalState}
                       saveAndClose={saveAndClose} />
+          <Table  workOrders={workOrders.slice((page-1) * 25, (page-1) * 25 + 25)}/>
           <Pagination bsSize="medium">
             <Pagination.First />
             <Pagination.Item  onClick={() => setPage(page - 1)}>Prev</Pagination.Item>

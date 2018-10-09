@@ -24,89 +24,89 @@ table {
   padding-top: 10px;
 }
 
-th {
+.Table th {
   border-bottom: 2px solid #01A1DD;
   font-weight: 700;
 }
 
-tr td {
+.Table tr td {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   white-space:nowrap;
 }
 
-tr:last-of-type td {
+.Table tr:last-of-type td {
   border: none;
 }
 
-tbody tr {
+.Table tbody tr {
   height: 63px;
 }
 
-th:first-of-type {
+.Table th:first-of-type {
   padding-left: 53px;
   width: 136px;
 }
 
-tr td:first-of-type {
+.Table tr td:first-of-type {
   padding-left: 53px;
   width: 136px;
 }
 
-th:nth-child(2) {
+.Table th:nth-child(2) {
   width: 80px;
 }
 
-tr td:nth-child(2) {
+.Table tr td:nth-child(2) {
   width: 80px;
 }
 
-th:nth-child(3) {
+.Table th:nth-child(3) {
   padding-left: 16px;
   width: 40px;
 }
 
-tr td:nth-child(3) {
+.Table tr td:nth-child(3) {
   padding-left: 16px;
   width: 40px;
 }
 
-th:nth-child(4) {
+.Table th:nth-child(4) {
   padding-left: 50px;
   width: 60px;
 }
 
-tr td:nth-child(4) {
+.Table tr td:nth-child(4) {
   padding-left: 50px;
   width: 60px;
 }
 
-th:nth-child(5) {
+.Table th:nth-child(5) {
   padding-left: 50px;
   width: 70px;
 }
 
-tr td:nth-child(5) {
+.Table tr td:nth-child(5) {
   padding-left: 50px;
   width: 70px;
 }
 
-th:nth-child(6) {
+.Table th:nth-child(6) {
   padding-left: 90px;
   width: 50px;
 }
 
-tr td:nth-child(6) {
+.Table tr td:nth-child(6) {
   padding-left: 90px;
   width: 50px;
 }
 
-th:nth-child(7) {
+.Table th:nth-child(7) {
   padding-left: 44px;
   width: 50px;
 }
 
-tr td:nth-child(7) {
+.Table tr td:nth-child(7) {
   padding-left: 48px;
   width: 50px;
 }
