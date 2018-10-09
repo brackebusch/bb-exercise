@@ -1,0 +1,103 @@
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.ModalContainer {
+  width: 680px;
+  border-radius: 0px;
+}
+
+.Close { 
+  font-size: 30px;
+  line-height: 30px;
+  color: #5C5C5C;
+  float: right;
+  font-size: 32px;
+  margin: -8px -24px;
+}
+
+.Close:hover, .Close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ModalBody {
+  width: 600px;
+  height: 550px;
+  margin: 16px auto;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ModalBody h3 {
+  padding-top: 20px;
+  margin-bottom: -12px;
+}
+
+.ModalBody button {
+  width: 180px;
+  padding: 1px 10px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 36px;
+}
+
+.Select {
+  padding: 5px 50px 0 10px;
+  color: #555;
+  width: 284px;
+  height: 36px;
+  font-weight: 700;
+  vertical-align: middle;
+  align-items: center;
+  white-space: pre;
+  cursor: pointer;
+}
+
+#coffee, #method, #date {
+  border-radius: 0px;
+  width: 284px;
+}
+
+#cases, #packets {
+  border-radius: 0px;
+  width: 132px;
+} 
+
+#notes {
+  border-radius: 0px;
+  width: 580px;
+}
+
+.SmallSelect {
+  width: 132px;
+}
+
+.Inputs {
+  width: 286px;
+  margin-top: 32px;
+}
+
+.SmallInputs {
+  width: 284px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Red {
+  text-decoration: none;
+  color: red;
+}
