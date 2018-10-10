@@ -10,7 +10,7 @@ Open new terminal window
 2.	`npm install`
 3.	` npm start`
 
-This will launch application at http://localhost:3000/ API calls are made via proxy to http://localhost:3001/. Testing can be run via `npm test` or `bundle exec rspec` in respective parent folders (`client` or `bb_exercise`). There are 42 tests right now, and I would add a few more given more time.
+This will launch application at http://localhost:3000/ API calls are made via proxy to http://localhost:3001/. Testing can be run via `npm test` or `bundle exec rspec` in respective parent folders (`client` or `bb_exercise`). There are 42 tests right now, though I would add a few more given time.
 
 ----
 ### Architecture 
@@ -21,7 +21,7 @@ React handles all the UI. It’s fast, popular, well documented, familiar to me 
 
 ----
 ### Future Considerations
-* Having an orders table with ID’s for data. In other words, because there are predetermined types of coffee, brew methods, and packets per case, these could each be their own table and their ID’s could be linked in each order. This minimizes space and increases performance (not storing strings in every order). In addition, by having tables with set coffees and brew methods, these could be sent to the frontend for the creation of forms. There is then no chanced of someone misspelling a unique blend of coffee when creating an option for a dropdown, as the dropdowns could be created by iterating over a list returned from a table in the database. Also, if there was expansion into other markets with different languages, orders could remain consistent in the table with reference to brew methods and coffee types. The cost here is that a table will need a join to understand and interpret data.
+* Having an orders table with ID’s for data. In other words, because there are predetermined types of coffee, brew methods, and packets-per-case, these could each be their own table and their ID’s could be linked in each order. This minimizes space and increases performance (not storing strings in every order). In addition, by having tables with set coffees and brew methods, these could be sent to the frontend for the creation of forms. There is then no chance of someone misspelling a unique blend of coffee when creating an option for a dropdown, as the dropdowns could be created by iterating over a list returned from a table in the database. Also, if there was expansion into other markets with different languages, orders could remain consistent in the table with reference to brew methods and coffee types. The cost here is that a table will need a join to understand and interpret data.
 *	Currently there is no authentication used, but this is critical for this to be any use. For the obvious case of security also for the ability to store order sender information. 
 *	Orders will need some sort of tracking information, like an address ID or customer ID or whether or not payment has been received for an order which has been placed. Currently there is a row for marking orders complete, but it is not used.
 *	Small things like edit, update, or delete orders via similar modal. I might make the case with respect to deletion that information is never deleted, only marked not current or outdated so there is a record of all changes made to the table/database.
@@ -57,3 +57,8 @@ React handles all the UI. It’s fast, popular, well documented, familiar to me 
 *	Hard coding dropdown data as opposed to retrieving from table. While I am a big fan of data driven design, it seemed a little out of scope for this project. Having a change occur on the frontend or backend is going to require a release both ways in the future, and a frontend modification is a little quicker to spot and modify in my opinion.  
 *	Sending all orders from table to frontend. This was again dictated by the size and scope of the application. Generally if the payload was too big I would break this down and paginate via backend (i.e. LIMIT and OFFSET). As it is, the request is so small it doesn’t make a dent in performance. At the moment I am only hitting the database when the application initially launches, and when an order is created and saved. If there was a large set of data, it would also require a rework of the Pagination on the frontend, as it would grow in size without any editing if there were too many orders.
 *	Routing for with pagination. An improvement could be made by having pagination be part of routes, so that finding an order could be referenced via link. This again would seem outside the scope of the exercise, but would be achievable via wrapping the application with React Router, which would also play well pagination on the backend.
+
+![alt text](/public/Initial.png "Initial Load")
+![alt text](public/Main.png "Main Screen")
+![alt text](public/Modal.png "Modal")
+![alt text](public/Error.png "Modal")
