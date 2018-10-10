@@ -18,7 +18,7 @@ const Header = ({changeModalState}) => {
         <button onClick={changeModalState}>CREATE ORDER</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default Header

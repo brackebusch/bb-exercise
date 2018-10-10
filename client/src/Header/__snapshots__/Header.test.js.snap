@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    changeModalState={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="logo"
+          className="App-logo"
+          src="logo.svg"
+        />,
+        <div
+          className="Header"
+        >
+          <div
+            className="Date-Title"
+          >
+            <div
+              className="Date"
+            >
+              <span
+                className="Month"
+              >
+                Oct
+              </span>
+              <span
+                className="Day"
+              >
+                10
+              </span>
+            </div>
+            <span
+              className="Title"
+            >
+              Perfectly Ground Work Orders
+            </span>
+          </div>
+          <button
+            onClick={[MockFunction]}
+          >
+            CREATE ORDER
+          </button>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "logo",
+          "className": "App-logo",
+          "src": "logo.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="Date-Title"
+            >
+              <div
+                className="Date"
+              >
+                <span
+                  className="Month"
+                >
+                  Oct
+                </span>
+                <span
+                  className="Day"
+                >
+                  10
+                </span>
+              </div>
+              <span
+                className="Title"
+              >
+                Perfectly Ground Work Orders
+              </span>
+            </div>,
+            <button
+              onClick={[MockFunction]}
+            >
+              CREATE ORDER
+            </button>,
+          ],
+          "className": "Header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="Date"
+                >
+                  <span
+                    className="Month"
+                  >
+                    Oct
+                  </span>
+                  <span
+                    className="Day"
+                  >
+                    10
+                  </span>
+                </div>,
+                <span
+                  className="Title"
+                >
+                  Perfectly Ground Work Orders
+                </span>,
+              ],
+              "className": "Date-Title",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="Month"
+                    >
+                      Oct
+                    </span>,
+                    <span
+                      className="Day"
+                    >
+                      10
+                    </span>,
+                  ],
+                  "className": "Date",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Oct",
+                      "className": "Month",
+                    },
+                    "ref": null,
+                    "rendered": "Oct",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "10",
+                      "className": "Day",
+                    },
+                    "ref": null,
+                    "rendered": "10",
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Perfectly Ground Work Orders",
+                  "className": "Title",
+                },
+                "ref": null,
+                "rendered": "Perfectly Ground Work Orders",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CREATE ORDER",
+              "onClick": [MockFunction],
+            },
+            "ref": null,
+            "rendered": "CREATE ORDER",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="logo"
+            className="App-logo"
+            src="logo.svg"
+          />,
+          <div
+            className="Header"
+          >
+            <div
+              className="Date-Title"
+            >
+              <div
+                className="Date"
+              >
+                <span
+                  className="Month"
+                >
+                  Oct
+                </span>
+                <span
+                  className="Day"
+                >
+                  10
+                </span>
+              </div>
+              <span
+                className="Title"
+              >
+                Perfectly Ground Work Orders
+              </span>
+            </div>
+            <button
+              onClick={[MockFunction]}
+            >
+              CREATE ORDER
+            </button>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "logo",
+            "className": "App-logo",
+            "src": "logo.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="Date-Title"
+              >
+                <div
+                  className="Date"
+                >
+                  <span
+                    className="Month"
+                  >
+                    Oct
+                  </span>
+                  <span
+                    className="Day"
+                  >
+                    10
+                  </span>
+                </div>
+                <span
+                  className="Title"
+                >
+                  Perfectly Ground Work Orders
+                </span>
+              </div>,
+              <button
+                onClick={[MockFunction]}
+              >
+                CREATE ORDER
+              </button>,
+            ],
+            "className": "Header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="Date"
+                  >
+                    <span
+                      className="Month"
+                    >
+                      Oct
+                    </span>
+                    <span
+                      className="Day"
+                    >
+                      10
+                    </span>
+                  </div>,
+                  <span
+                    className="Title"
+                  >
+                    Perfectly Ground Work Orders
+                  </span>,
+                ],
+                "className": "Date-Title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="Month"
+                      >
+                        Oct
+                      </span>,
+                      <span
+                        className="Day"
+                      >
+                        10
+                      </span>,
+                    ],
+                    "className": "Date",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Oct",
+                        "className": "Month",
+                      },
+                      "ref": null,
+                      "rendered": "Oct",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "10",
+                        "className": "Day",
+                      },
+                      "ref": null,
+                      "rendered": "10",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Perfectly Ground Work Orders",
+                    "className": "Title",
+                  },
+                  "ref": null,
+                  "rendered": "Perfectly Ground Work Orders",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "CREATE ORDER",
+                "onClick": [MockFunction],
+              },
+              "ref": null,
+              "rendered": "CREATE ORDER",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

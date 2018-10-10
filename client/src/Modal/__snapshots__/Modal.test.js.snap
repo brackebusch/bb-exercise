@@ -1,0 +1,4122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ModalView
+    changeModalState={[MockFunction]}
+    error="Test Error"
+    handleInputChange={[MockFunction]}
+    saveAndClose={[MockFunction]}
+    setDate={[MockFunction]}
+    setError={[MockFunction]}
+    showModal={true}
+    workOrder={
+      Object {
+        "cases": "#",
+        "coffee": "Choose One",
+        "method": "Choose One",
+        "notes": "",
+        "packets": "25",
+        "priority": false,
+        "ship_date": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animation": true,
+      "autoFocus": true,
+      "backdrop": true,
+      "bsClass": "modal",
+      "children": <div
+        className="ModalBody"
+      >
+        <span
+          className="Close"
+          onClick={[MockFunction]}
+        >
+          ×
+        </span>
+        <h3>
+          Perfectly Ground Work Orders
+        </h3>
+        <br />
+        Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.
+        <form
+          id="workOrderForm"
+        >
+          <FormGroup
+            bsClass="form-group"
+            controlId="coffee"
+          >
+            <ControlLabel
+              bsClass="control-label"
+              srOnly={false}
+            >
+              Coffee 
+              <span
+                className="Red"
+              >
+                *
+              </span>
+            </ControlLabel>
+            <FormControl
+              bsClass="form-control"
+              componentClass="select"
+              name="coffee"
+              onChange={[MockFunction]}
+              value="Choose One"
+            >
+              <option
+                hidden={true}
+                value="Choose One"
+              >
+                Choose One
+              </option>
+              <option
+                value="Bella Donovan"
+              >
+                Bella Donovan
+              </option>
+              <option
+                value="Giant Steps"
+              >
+                Giant Steps
+              </option>
+            </FormControl>
+          </FormGroup>
+          <FormGroup
+            bsClass="form-group"
+            controlId="method"
+          >
+            <ControlLabel
+              bsClass="control-label"
+              srOnly={false}
+            >
+              Brew Method 
+              <span
+                className="Red"
+              >
+                *
+              </span>
+            </ControlLabel>
+            <FormControl
+              bsClass="form-control"
+              componentClass="select"
+              name="method"
+              onChange={[MockFunction]}
+              value="Choose One"
+            >
+              <option
+                hidden={true}
+                value="Choose One"
+              >
+                Choose One
+              </option>
+              <option
+                value="AeroPress"
+              >
+                AeroPress
+              </option>
+              <option
+                value="Coffee Maker"
+              >
+                Coffee Maker
+              </option>
+              <option
+                value="Cold Brew"
+              >
+                Cold Brew
+              </option>
+              <option
+                value="French Press"
+              >
+                French Press
+              </option>
+              <option
+                value="Pour Over"
+              >
+                Pour Over
+              </option>
+            </FormControl>
+          </FormGroup>
+          <FormGroup
+            bsClass="form-group"
+            controlId="date"
+          >
+            <ControlLabel
+              bsClass="control-label"
+              srOnly={false}
+            >
+              Ship Date 
+              <span
+                className="Red"
+              >
+                *
+              </span>
+            </ControlLabel>
+            <DateTime
+              className=""
+              closeOnSelect={true}
+              closeOnTab={true}
+              dateFormat="MM/DD/YYYY"
+              defaultValue=""
+              input={true}
+              inputProps={Object {}}
+              isValidDate={[Function]}
+              onBlur={[Function]}
+              onChange={[MockFunction]}
+              onFocus={[Function]}
+              onNavigateBack={[Function]}
+              onNavigateForward={[Function]}
+              onViewModeChange={[Function]}
+              strictParsing={true}
+              timeConstraints={Object {}}
+              timeFormat={false}
+              utc={false}
+              value=""
+            />
+          </FormGroup>
+          <div
+            className="SmallInputs"
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="cases"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Number of Cases 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="cases"
+                onChange={[MockFunction]}
+                value="#"
+              >
+                <option
+                  hidden={true}
+                  value="#"
+                >
+                  #
+                </option>
+                <option
+                  value="1"
+                >
+                  1
+                </option>
+                <option
+                  value="5"
+                >
+                  5
+                </option>
+                <option
+                  value="10"
+                >
+                  10
+                </option>
+                <option
+                  value="20"
+                >
+                  20
+                </option>
+                <option
+                  value="50"
+                >
+                  50
+                </option>
+                <option
+                  value="100"
+                >
+                  100
+                </option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+              controlId="packets"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Packets per Case 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="packets"
+                onChange={[MockFunction]}
+                value="25"
+              >
+                <option
+                  value="25"
+                >
+                  25
+                </option>
+                <option
+                  value="50"
+                >
+                  50
+                </option>
+              </FormControl>
+            </FormGroup>
+          </div>
+          <FormGroup
+            bsClass="form-group"
+            bsSize="small"
+            controlId="notes"
+          >
+            <ControlLabel
+              bsClass="control-label"
+              srOnly={false}
+            >
+              Notes
+            </ControlLabel>
+            <FormControl
+              bsClass="form-control"
+              componentClass="input"
+              name="notes"
+              onChange={[MockFunction]}
+              type="text"
+              value=""
+            />
+          </FormGroup>
+          <FormGroup
+            bsClass="form-group"
+          >
+            <Checkbox
+              bsClass="checkbox"
+              disabled={false}
+              id="priority"
+              inline={false}
+              name="priority"
+              onChange={[MockFunction]}
+              title=""
+              value={false}
+            >
+              Priority
+            </Checkbox>
+          </FormGroup>
+        </form>
+        <Error
+          error="Test Error"
+        />
+        <button
+          id="submit"
+          onClick={[Function]}
+        >
+          SUBMIT WORK ORDER
+        </button>
+      </div>,
+      "dialogClassName": "ModalContainer",
+      "dialogComponentClass": [Function],
+      "enforceFocus": true,
+      "keyboard": true,
+      "manager": ModalManager {
+        "add": [Function],
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "isTopModal": [Function],
+        "modals": Array [],
+        "remove": [Function],
+      },
+      "onHide": [MockFunction],
+      "renderBackdrop": [Function],
+      "restoreFocus": true,
+      "show": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="Close"
+            onClick={[MockFunction]}
+          >
+            ×
+          </span>,
+          <h3>
+            Perfectly Ground Work Orders
+          </h3>,
+          <br />,
+          "Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.",
+          <form
+            id="workOrderForm"
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="coffee"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Coffee 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="coffee"
+                onChange={[MockFunction]}
+                value="Choose One"
+              >
+                <option
+                  hidden={true}
+                  value="Choose One"
+                >
+                  Choose One
+                </option>
+                <option
+                  value="Bella Donovan"
+                >
+                  Bella Donovan
+                </option>
+                <option
+                  value="Giant Steps"
+                >
+                  Giant Steps
+                </option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+              controlId="method"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Brew Method 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="method"
+                onChange={[MockFunction]}
+                value="Choose One"
+              >
+                <option
+                  hidden={true}
+                  value="Choose One"
+                >
+                  Choose One
+                </option>
+                <option
+                  value="AeroPress"
+                >
+                  AeroPress
+                </option>
+                <option
+                  value="Coffee Maker"
+                >
+                  Coffee Maker
+                </option>
+                <option
+                  value="Cold Brew"
+                >
+                  Cold Brew
+                </option>
+                <option
+                  value="French Press"
+                >
+                  French Press
+                </option>
+                <option
+                  value="Pour Over"
+                >
+                  Pour Over
+                </option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+              controlId="date"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Ship Date 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <DateTime
+                className=""
+                closeOnSelect={true}
+                closeOnTab={true}
+                dateFormat="MM/DD/YYYY"
+                defaultValue=""
+                input={true}
+                inputProps={Object {}}
+                isValidDate={[Function]}
+                onBlur={[Function]}
+                onChange={[MockFunction]}
+                onFocus={[Function]}
+                onNavigateBack={[Function]}
+                onNavigateForward={[Function]}
+                onViewModeChange={[Function]}
+                strictParsing={true}
+                timeConstraints={Object {}}
+                timeFormat={false}
+                utc={false}
+                value=""
+              />
+            </FormGroup>
+            <div
+              className="SmallInputs"
+            >
+              <FormGroup
+                bsClass="form-group"
+                controlId="cases"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Number of Cases 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="cases"
+                  onChange={[MockFunction]}
+                  value="#"
+                >
+                  <option
+                    hidden={true}
+                    value="#"
+                  >
+                    #
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    1
+                  </option>
+                  <option
+                    value="5"
+                  >
+                    5
+                  </option>
+                  <option
+                    value="10"
+                  >
+                    10
+                  </option>
+                  <option
+                    value="20"
+                  >
+                    20
+                  </option>
+                  <option
+                    value="50"
+                  >
+                    50
+                  </option>
+                  <option
+                    value="100"
+                  >
+                    100
+                  </option>
+                </FormControl>
+              </FormGroup>
+              <FormGroup
+                bsClass="form-group"
+                controlId="packets"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Packets per Case 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="packets"
+                  onChange={[MockFunction]}
+                  value="25"
+                >
+                  <option
+                    value="25"
+                  >
+                    25
+                  </option>
+                  <option
+                    value="50"
+                  >
+                    50
+                  </option>
+                </FormControl>
+              </FormGroup>
+            </div>
+            <FormGroup
+              bsClass="form-group"
+              bsSize="small"
+              controlId="notes"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Notes
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="input"
+                name="notes"
+                onChange={[MockFunction]}
+                type="text"
+                value=""
+              />
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+            >
+              <Checkbox
+                bsClass="checkbox"
+                disabled={false}
+                id="priority"
+                inline={false}
+                name="priority"
+                onChange={[MockFunction]}
+                title=""
+                value={false}
+              >
+                Priority
+              </Checkbox>
+            </FormGroup>
+          </form>,
+          <Error
+            error="Test Error"
+          />,
+          <button
+            id="submit"
+            onClick={[Function]}
+          >
+            SUBMIT WORK ORDER
+          </button>,
+        ],
+        "className": "ModalBody",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "×",
+            "className": "Close",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "×",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Perfectly Ground Work Orders",
+          },
+          "ref": null,
+          "rendered": "Perfectly Ground Work Orders",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        "Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FormGroup
+                bsClass="form-group"
+                controlId="coffee"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Coffee 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="coffee"
+                  onChange={[MockFunction]}
+                  value="Choose One"
+                >
+                  <option
+                    hidden={true}
+                    value="Choose One"
+                  >
+                    Choose One
+                  </option>
+                  <option
+                    value="Bella Donovan"
+                  >
+                    Bella Donovan
+                  </option>
+                  <option
+                    value="Giant Steps"
+                  >
+                    Giant Steps
+                  </option>
+                </FormControl>
+              </FormGroup>,
+              <FormGroup
+                bsClass="form-group"
+                controlId="method"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Brew Method 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="method"
+                  onChange={[MockFunction]}
+                  value="Choose One"
+                >
+                  <option
+                    hidden={true}
+                    value="Choose One"
+                  >
+                    Choose One
+                  </option>
+                  <option
+                    value="AeroPress"
+                  >
+                    AeroPress
+                  </option>
+                  <option
+                    value="Coffee Maker"
+                  >
+                    Coffee Maker
+                  </option>
+                  <option
+                    value="Cold Brew"
+                  >
+                    Cold Brew
+                  </option>
+                  <option
+                    value="French Press"
+                  >
+                    French Press
+                  </option>
+                  <option
+                    value="Pour Over"
+                  >
+                    Pour Over
+                  </option>
+                </FormControl>
+              </FormGroup>,
+              <FormGroup
+                bsClass="form-group"
+                controlId="date"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Ship Date 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <DateTime
+                  className=""
+                  closeOnSelect={true}
+                  closeOnTab={true}
+                  dateFormat="MM/DD/YYYY"
+                  defaultValue=""
+                  input={true}
+                  inputProps={Object {}}
+                  isValidDate={[Function]}
+                  onBlur={[Function]}
+                  onChange={[MockFunction]}
+                  onFocus={[Function]}
+                  onNavigateBack={[Function]}
+                  onNavigateForward={[Function]}
+                  onViewModeChange={[Function]}
+                  strictParsing={true}
+                  timeConstraints={Object {}}
+                  timeFormat={false}
+                  utc={false}
+                  value=""
+                />
+              </FormGroup>,
+              <div
+                className="SmallInputs"
+              >
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="cases"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Number of Cases 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="cases"
+                    onChange={[MockFunction]}
+                    value="#"
+                  >
+                    <option
+                      hidden={true}
+                      value="#"
+                    >
+                      #
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      1
+                    </option>
+                    <option
+                      value="5"
+                    >
+                      5
+                    </option>
+                    <option
+                      value="10"
+                    >
+                      10
+                    </option>
+                    <option
+                      value="20"
+                    >
+                      20
+                    </option>
+                    <option
+                      value="50"
+                    >
+                      50
+                    </option>
+                    <option
+                      value="100"
+                    >
+                      100
+                    </option>
+                  </FormControl>
+                </FormGroup>
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="packets"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Packets per Case 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="packets"
+                    onChange={[MockFunction]}
+                    value="25"
+                  >
+                    <option
+                      value="25"
+                    >
+                      25
+                    </option>
+                    <option
+                      value="50"
+                    >
+                      50
+                    </option>
+                  </FormControl>
+                </FormGroup>
+              </div>,
+              <FormGroup
+                bsClass="form-group"
+                bsSize="small"
+                controlId="notes"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Notes
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="input"
+                  name="notes"
+                  onChange={[MockFunction]}
+                  type="text"
+                  value=""
+                />
+              </FormGroup>,
+              <FormGroup
+                bsClass="form-group"
+              >
+                <Checkbox
+                  bsClass="checkbox"
+                  disabled={false}
+                  id="priority"
+                  inline={false}
+                  name="priority"
+                  onChange={[MockFunction]}
+                  title=""
+                  value={false}
+                >
+                  Priority
+                </Checkbox>
+              </FormGroup>,
+            ],
+            "id": "workOrderForm",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": Array [
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Coffee 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>,
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="coffee"
+                    onChange={[MockFunction]}
+                    value="Choose One"
+                  >
+                    <option
+                      hidden={true}
+                      value="Choose One"
+                    >
+                      Choose One
+                    </option>
+                    <option
+                      value="Bella Donovan"
+                    >
+                      Bella Donovan
+                    </option>
+                    <option
+                      value="Giant Steps"
+                    >
+                      Giant Steps
+                    </option>
+                  </FormControl>,
+                ],
+                "controlId": "coffee",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "control-label",
+                    "children": Array [
+                      "Coffee ",
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>,
+                    ],
+                    "srOnly": false,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Coffee ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "*",
+                        "className": "Red",
+                      },
+                      "ref": null,
+                      "rendered": "*",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-control",
+                    "children": Array [
+                      <option
+                        hidden={true}
+                        value="Choose One"
+                      >
+                        Choose One
+                      </option>,
+                      <option
+                        value="Bella Donovan"
+                      >
+                        Bella Donovan
+                      </option>,
+                      <option
+                        value="Giant Steps"
+                      >
+                        Giant Steps
+                      </option>,
+                    ],
+                    "componentClass": "select",
+                    "name": "coffee",
+                    "onChange": [MockFunction],
+                    "value": "Choose One",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Choose One",
+                        "hidden": true,
+                        "value": "Choose One",
+                      },
+                      "ref": null,
+                      "rendered": "Choose One",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Bella Donovan",
+                        "value": "Bella Donovan",
+                      },
+                      "ref": null,
+                      "rendered": "Bella Donovan",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Giant Steps",
+                        "value": "Giant Steps",
+                      },
+                      "ref": null,
+                      "rendered": "Giant Steps",
+                      "type": "option",
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": Array [
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Brew Method 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>,
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="method"
+                    onChange={[MockFunction]}
+                    value="Choose One"
+                  >
+                    <option
+                      hidden={true}
+                      value="Choose One"
+                    >
+                      Choose One
+                    </option>
+                    <option
+                      value="AeroPress"
+                    >
+                      AeroPress
+                    </option>
+                    <option
+                      value="Coffee Maker"
+                    >
+                      Coffee Maker
+                    </option>
+                    <option
+                      value="Cold Brew"
+                    >
+                      Cold Brew
+                    </option>
+                    <option
+                      value="French Press"
+                    >
+                      French Press
+                    </option>
+                    <option
+                      value="Pour Over"
+                    >
+                      Pour Over
+                    </option>
+                  </FormControl>,
+                ],
+                "controlId": "method",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "control-label",
+                    "children": Array [
+                      "Brew Method ",
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>,
+                    ],
+                    "srOnly": false,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Brew Method ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "*",
+                        "className": "Red",
+                      },
+                      "ref": null,
+                      "rendered": "*",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-control",
+                    "children": Array [
+                      <option
+                        hidden={true}
+                        value="Choose One"
+                      >
+                        Choose One
+                      </option>,
+                      <option
+                        value="AeroPress"
+                      >
+                        AeroPress
+                      </option>,
+                      <option
+                        value="Coffee Maker"
+                      >
+                        Coffee Maker
+                      </option>,
+                      <option
+                        value="Cold Brew"
+                      >
+                        Cold Brew
+                      </option>,
+                      <option
+                        value="French Press"
+                      >
+                        French Press
+                      </option>,
+                      <option
+                        value="Pour Over"
+                      >
+                        Pour Over
+                      </option>,
+                    ],
+                    "componentClass": "select",
+                    "name": "method",
+                    "onChange": [MockFunction],
+                    "value": "Choose One",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Choose One",
+                        "hidden": true,
+                        "value": "Choose One",
+                      },
+                      "ref": null,
+                      "rendered": "Choose One",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "AeroPress",
+                        "value": "AeroPress",
+                      },
+                      "ref": null,
+                      "rendered": "AeroPress",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Coffee Maker",
+                        "value": "Coffee Maker",
+                      },
+                      "ref": null,
+                      "rendered": "Coffee Maker",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Cold Brew",
+                        "value": "Cold Brew",
+                      },
+                      "ref": null,
+                      "rendered": "Cold Brew",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "French Press",
+                        "value": "French Press",
+                      },
+                      "ref": null,
+                      "rendered": "French Press",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Pour Over",
+                        "value": "Pour Over",
+                      },
+                      "ref": null,
+                      "rendered": "Pour Over",
+                      "type": "option",
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": Array [
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Ship Date 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>,
+                  <DateTime
+                    className=""
+                    closeOnSelect={true}
+                    closeOnTab={true}
+                    dateFormat="MM/DD/YYYY"
+                    defaultValue=""
+                    input={true}
+                    inputProps={Object {}}
+                    isValidDate={[Function]}
+                    onBlur={[Function]}
+                    onChange={[MockFunction]}
+                    onFocus={[Function]}
+                    onNavigateBack={[Function]}
+                    onNavigateForward={[Function]}
+                    onViewModeChange={[Function]}
+                    strictParsing={true}
+                    timeConstraints={Object {}}
+                    timeFormat={false}
+                    utc={false}
+                    value=""
+                  />,
+                ],
+                "controlId": "date",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "control-label",
+                    "children": Array [
+                      "Ship Date ",
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>,
+                    ],
+                    "srOnly": false,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Ship Date ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "*",
+                        "className": "Red",
+                      },
+                      "ref": null,
+                      "rendered": "*",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "",
+                    "closeOnSelect": true,
+                    "closeOnTab": true,
+                    "dateFormat": "MM/DD/YYYY",
+                    "defaultValue": "",
+                    "input": true,
+                    "inputProps": Object {},
+                    "isValidDate": [Function],
+                    "onBlur": [Function],
+                    "onChange": [MockFunction],
+                    "onFocus": [Function],
+                    "onNavigateBack": [Function],
+                    "onNavigateForward": [Function],
+                    "onViewModeChange": [Function],
+                    "strictParsing": true,
+                    "timeConstraints": Object {},
+                    "timeFormat": false,
+                    "utc": false,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FormGroup
+                    bsClass="form-group"
+                    controlId="cases"
+                  >
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Number of Cases 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="cases"
+                      onChange={[MockFunction]}
+                      value="#"
+                    >
+                      <option
+                        hidden={true}
+                        value="#"
+                      >
+                        #
+                      </option>
+                      <option
+                        value="1"
+                      >
+                        1
+                      </option>
+                      <option
+                        value="5"
+                      >
+                        5
+                      </option>
+                      <option
+                        value="10"
+                      >
+                        10
+                      </option>
+                      <option
+                        value="20"
+                      >
+                        20
+                      </option>
+                      <option
+                        value="50"
+                      >
+                        50
+                      </option>
+                      <option
+                        value="100"
+                      >
+                        100
+                      </option>
+                    </FormControl>
+                  </FormGroup>,
+                  <FormGroup
+                    bsClass="form-group"
+                    controlId="packets"
+                  >
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Packets per Case 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="packets"
+                      onChange={[MockFunction]}
+                      value="25"
+                    >
+                      <option
+                        value="25"
+                      >
+                        25
+                      </option>
+                      <option
+                        value="50"
+                      >
+                        50
+                      </option>
+                    </FormControl>
+                  </FormGroup>,
+                ],
+                "className": "SmallInputs",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-group",
+                    "children": Array [
+                      <ControlLabel
+                        bsClass="control-label"
+                        srOnly={false}
+                      >
+                        Number of Cases 
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>
+                      </ControlLabel>,
+                      <FormControl
+                        bsClass="form-control"
+                        componentClass="select"
+                        name="cases"
+                        onChange={[MockFunction]}
+                        value="#"
+                      >
+                        <option
+                          hidden={true}
+                          value="#"
+                        >
+                          #
+                        </option>
+                        <option
+                          value="1"
+                        >
+                          1
+                        </option>
+                        <option
+                          value="5"
+                        >
+                          5
+                        </option>
+                        <option
+                          value="10"
+                        >
+                          10
+                        </option>
+                        <option
+                          value="20"
+                        >
+                          20
+                        </option>
+                        <option
+                          value="50"
+                        >
+                          50
+                        </option>
+                        <option
+                          value="100"
+                        >
+                          100
+                        </option>
+                      </FormControl>,
+                    ],
+                    "controlId": "cases",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "bsClass": "control-label",
+                        "children": Array [
+                          "Number of Cases ",
+                          <span
+                            className="Red"
+                          >
+                            *
+                          </span>,
+                        ],
+                        "srOnly": false,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Number of Cases ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "Red",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "bsClass": "form-control",
+                        "children": Array [
+                          <option
+                            hidden={true}
+                            value="#"
+                          >
+                            #
+                          </option>,
+                          <option
+                            value="1"
+                          >
+                            1
+                          </option>,
+                          <option
+                            value="5"
+                          >
+                            5
+                          </option>,
+                          <option
+                            value="10"
+                          >
+                            10
+                          </option>,
+                          <option
+                            value="20"
+                          >
+                            20
+                          </option>,
+                          <option
+                            value="50"
+                          >
+                            50
+                          </option>,
+                          <option
+                            value="100"
+                          >
+                            100
+                          </option>,
+                        ],
+                        "componentClass": "select",
+                        "name": "cases",
+                        "onChange": [MockFunction],
+                        "value": "#",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "#",
+                            "hidden": true,
+                            "value": "#",
+                          },
+                          "ref": null,
+                          "rendered": "#",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "1",
+                            "value": "1",
+                          },
+                          "ref": null,
+                          "rendered": "1",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "5",
+                            "value": "5",
+                          },
+                          "ref": null,
+                          "rendered": "5",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "10",
+                            "value": "10",
+                          },
+                          "ref": null,
+                          "rendered": "10",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "20",
+                            "value": "20",
+                          },
+                          "ref": null,
+                          "rendered": "20",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "50",
+                            "value": "50",
+                          },
+                          "ref": null,
+                          "rendered": "50",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "100",
+                            "value": "100",
+                          },
+                          "ref": null,
+                          "rendered": "100",
+                          "type": "option",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-group",
+                    "children": Array [
+                      <ControlLabel
+                        bsClass="control-label"
+                        srOnly={false}
+                      >
+                        Packets per Case 
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>
+                      </ControlLabel>,
+                      <FormControl
+                        bsClass="form-control"
+                        componentClass="select"
+                        name="packets"
+                        onChange={[MockFunction]}
+                        value="25"
+                      >
+                        <option
+                          value="25"
+                        >
+                          25
+                        </option>
+                        <option
+                          value="50"
+                        >
+                          50
+                        </option>
+                      </FormControl>,
+                    ],
+                    "controlId": "packets",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "bsClass": "control-label",
+                        "children": Array [
+                          "Packets per Case ",
+                          <span
+                            className="Red"
+                          >
+                            *
+                          </span>,
+                        ],
+                        "srOnly": false,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Packets per Case ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "Red",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "bsClass": "form-control",
+                        "children": Array [
+                          <option
+                            value="25"
+                          >
+                            25
+                          </option>,
+                          <option
+                            value="50"
+                          >
+                            50
+                          </option>,
+                        ],
+                        "componentClass": "select",
+                        "name": "packets",
+                        "onChange": [MockFunction],
+                        "value": "25",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "25",
+                            "value": "25",
+                          },
+                          "ref": null,
+                          "rendered": "25",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "50",
+                            "value": "50",
+                          },
+                          "ref": null,
+                          "rendered": "50",
+                          "type": "option",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "bsSize": "small",
+                "children": Array [
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Notes
+                  </ControlLabel>,
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="input"
+                    name="notes"
+                    onChange={[MockFunction]}
+                    type="text"
+                    value=""
+                  />,
+                ],
+                "controlId": "notes",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "control-label",
+                    "children": "Notes",
+                    "srOnly": false,
+                  },
+                  "ref": null,
+                  "rendered": "Notes",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-control",
+                    "componentClass": "input",
+                    "name": "notes",
+                    "onChange": [MockFunction],
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": <Checkbox
+                  bsClass="checkbox"
+                  disabled={false}
+                  id="priority"
+                  inline={false}
+                  name="priority"
+                  onChange={[MockFunction]}
+                  title=""
+                  value={false}
+                >
+                  Priority
+                </Checkbox>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "checkbox",
+                  "children": "Priority",
+                  "disabled": false,
+                  "id": "priority",
+                  "inline": false,
+                  "name": "priority",
+                  "onChange": [MockFunction],
+                  "title": "",
+                  "value": false,
+                },
+                "ref": null,
+                "rendered": "Priority",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "form",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "error": "Test Error",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SUBMIT WORK ORDER",
+            "id": "submit",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "SUBMIT WORK ORDER",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animation": true,
+        "autoFocus": true,
+        "backdrop": true,
+        "bsClass": "modal",
+        "children": <div
+          className="ModalBody"
+        >
+          <span
+            className="Close"
+            onClick={[MockFunction]}
+          >
+            ×
+          </span>
+          <h3>
+            Perfectly Ground Work Orders
+          </h3>
+          <br />
+          Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.
+          <form
+            id="workOrderForm"
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="coffee"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Coffee 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="coffee"
+                onChange={[MockFunction]}
+                value="Choose One"
+              >
+                <option
+                  hidden={true}
+                  value="Choose One"
+                >
+                  Choose One
+                </option>
+                <option
+                  value="Bella Donovan"
+                >
+                  Bella Donovan
+                </option>
+                <option
+                  value="Giant Steps"
+                >
+                  Giant Steps
+                </option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+              controlId="method"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Brew Method 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="select"
+                name="method"
+                onChange={[MockFunction]}
+                value="Choose One"
+              >
+                <option
+                  hidden={true}
+                  value="Choose One"
+                >
+                  Choose One
+                </option>
+                <option
+                  value="AeroPress"
+                >
+                  AeroPress
+                </option>
+                <option
+                  value="Coffee Maker"
+                >
+                  Coffee Maker
+                </option>
+                <option
+                  value="Cold Brew"
+                >
+                  Cold Brew
+                </option>
+                <option
+                  value="French Press"
+                >
+                  French Press
+                </option>
+                <option
+                  value="Pour Over"
+                >
+                  Pour Over
+                </option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+              controlId="date"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Ship Date 
+                <span
+                  className="Red"
+                >
+                  *
+                </span>
+              </ControlLabel>
+              <DateTime
+                className=""
+                closeOnSelect={true}
+                closeOnTab={true}
+                dateFormat="MM/DD/YYYY"
+                defaultValue=""
+                input={true}
+                inputProps={Object {}}
+                isValidDate={[Function]}
+                onBlur={[Function]}
+                onChange={[MockFunction]}
+                onFocus={[Function]}
+                onNavigateBack={[Function]}
+                onNavigateForward={[Function]}
+                onViewModeChange={[Function]}
+                strictParsing={true}
+                timeConstraints={Object {}}
+                timeFormat={false}
+                utc={false}
+                value=""
+              />
+            </FormGroup>
+            <div
+              className="SmallInputs"
+            >
+              <FormGroup
+                bsClass="form-group"
+                controlId="cases"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Number of Cases 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="cases"
+                  onChange={[MockFunction]}
+                  value="#"
+                >
+                  <option
+                    hidden={true}
+                    value="#"
+                  >
+                    #
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    1
+                  </option>
+                  <option
+                    value="5"
+                  >
+                    5
+                  </option>
+                  <option
+                    value="10"
+                  >
+                    10
+                  </option>
+                  <option
+                    value="20"
+                  >
+                    20
+                  </option>
+                  <option
+                    value="50"
+                  >
+                    50
+                  </option>
+                  <option
+                    value="100"
+                  >
+                    100
+                  </option>
+                </FormControl>
+              </FormGroup>
+              <FormGroup
+                bsClass="form-group"
+                controlId="packets"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Packets per Case 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="packets"
+                  onChange={[MockFunction]}
+                  value="25"
+                >
+                  <option
+                    value="25"
+                  >
+                    25
+                  </option>
+                  <option
+                    value="50"
+                  >
+                    50
+                  </option>
+                </FormControl>
+              </FormGroup>
+            </div>
+            <FormGroup
+              bsClass="form-group"
+              bsSize="small"
+              controlId="notes"
+            >
+              <ControlLabel
+                bsClass="control-label"
+                srOnly={false}
+              >
+                Notes
+              </ControlLabel>
+              <FormControl
+                bsClass="form-control"
+                componentClass="input"
+                name="notes"
+                onChange={[MockFunction]}
+                type="text"
+                value=""
+              />
+            </FormGroup>
+            <FormGroup
+              bsClass="form-group"
+            >
+              <Checkbox
+                bsClass="checkbox"
+                disabled={false}
+                id="priority"
+                inline={false}
+                name="priority"
+                onChange={[MockFunction]}
+                title=""
+                value={false}
+              >
+                Priority
+              </Checkbox>
+            </FormGroup>
+          </form>
+          <Error
+            error="Test Error"
+          />
+          <button
+            id="submit"
+            onClick={[Function]}
+          >
+            SUBMIT WORK ORDER
+          </button>
+        </div>,
+        "dialogClassName": "ModalContainer",
+        "dialogComponentClass": [Function],
+        "enforceFocus": true,
+        "keyboard": true,
+        "manager": ModalManager {
+          "add": [Function],
+          "containers": Array [],
+          "data": Array [],
+          "handleContainerOverflow": true,
+          "hideSiblingNodes": true,
+          "isTopModal": [Function],
+          "modals": Array [],
+          "remove": [Function],
+        },
+        "onHide": [MockFunction],
+        "renderBackdrop": [Function],
+        "restoreFocus": true,
+        "show": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="Close"
+              onClick={[MockFunction]}
+            >
+              ×
+            </span>,
+            <h3>
+              Perfectly Ground Work Orders
+            </h3>,
+            <br />,
+            "Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.",
+            <form
+              id="workOrderForm"
+            >
+              <FormGroup
+                bsClass="form-group"
+                controlId="coffee"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Coffee 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="coffee"
+                  onChange={[MockFunction]}
+                  value="Choose One"
+                >
+                  <option
+                    hidden={true}
+                    value="Choose One"
+                  >
+                    Choose One
+                  </option>
+                  <option
+                    value="Bella Donovan"
+                  >
+                    Bella Donovan
+                  </option>
+                  <option
+                    value="Giant Steps"
+                  >
+                    Giant Steps
+                  </option>
+                </FormControl>
+              </FormGroup>
+              <FormGroup
+                bsClass="form-group"
+                controlId="method"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Brew Method 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="select"
+                  name="method"
+                  onChange={[MockFunction]}
+                  value="Choose One"
+                >
+                  <option
+                    hidden={true}
+                    value="Choose One"
+                  >
+                    Choose One
+                  </option>
+                  <option
+                    value="AeroPress"
+                  >
+                    AeroPress
+                  </option>
+                  <option
+                    value="Coffee Maker"
+                  >
+                    Coffee Maker
+                  </option>
+                  <option
+                    value="Cold Brew"
+                  >
+                    Cold Brew
+                  </option>
+                  <option
+                    value="French Press"
+                  >
+                    French Press
+                  </option>
+                  <option
+                    value="Pour Over"
+                  >
+                    Pour Over
+                  </option>
+                </FormControl>
+              </FormGroup>
+              <FormGroup
+                bsClass="form-group"
+                controlId="date"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Ship Date 
+                  <span
+                    className="Red"
+                  >
+                    *
+                  </span>
+                </ControlLabel>
+                <DateTime
+                  className=""
+                  closeOnSelect={true}
+                  closeOnTab={true}
+                  dateFormat="MM/DD/YYYY"
+                  defaultValue=""
+                  input={true}
+                  inputProps={Object {}}
+                  isValidDate={[Function]}
+                  onBlur={[Function]}
+                  onChange={[MockFunction]}
+                  onFocus={[Function]}
+                  onNavigateBack={[Function]}
+                  onNavigateForward={[Function]}
+                  onViewModeChange={[Function]}
+                  strictParsing={true}
+                  timeConstraints={Object {}}
+                  timeFormat={false}
+                  utc={false}
+                  value=""
+                />
+              </FormGroup>
+              <div
+                className="SmallInputs"
+              >
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="cases"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Number of Cases 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="cases"
+                    onChange={[MockFunction]}
+                    value="#"
+                  >
+                    <option
+                      hidden={true}
+                      value="#"
+                    >
+                      #
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      1
+                    </option>
+                    <option
+                      value="5"
+                    >
+                      5
+                    </option>
+                    <option
+                      value="10"
+                    >
+                      10
+                    </option>
+                    <option
+                      value="20"
+                    >
+                      20
+                    </option>
+                    <option
+                      value="50"
+                    >
+                      50
+                    </option>
+                    <option
+                      value="100"
+                    >
+                      100
+                    </option>
+                  </FormControl>
+                </FormGroup>
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="packets"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Packets per Case 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="packets"
+                    onChange={[MockFunction]}
+                    value="25"
+                  >
+                    <option
+                      value="25"
+                    >
+                      25
+                    </option>
+                    <option
+                      value="50"
+                    >
+                      50
+                    </option>
+                  </FormControl>
+                </FormGroup>
+              </div>
+              <FormGroup
+                bsClass="form-group"
+                bsSize="small"
+                controlId="notes"
+              >
+                <ControlLabel
+                  bsClass="control-label"
+                  srOnly={false}
+                >
+                  Notes
+                </ControlLabel>
+                <FormControl
+                  bsClass="form-control"
+                  componentClass="input"
+                  name="notes"
+                  onChange={[MockFunction]}
+                  type="text"
+                  value=""
+                />
+              </FormGroup>
+              <FormGroup
+                bsClass="form-group"
+              >
+                <Checkbox
+                  bsClass="checkbox"
+                  disabled={false}
+                  id="priority"
+                  inline={false}
+                  name="priority"
+                  onChange={[MockFunction]}
+                  title=""
+                  value={false}
+                >
+                  Priority
+                </Checkbox>
+              </FormGroup>
+            </form>,
+            <Error
+              error="Test Error"
+            />,
+            <button
+              id="submit"
+              onClick={[Function]}
+            >
+              SUBMIT WORK ORDER
+            </button>,
+          ],
+          "className": "ModalBody",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "×",
+              "className": "Close",
+              "onClick": [MockFunction],
+            },
+            "ref": null,
+            "rendered": "×",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Perfectly Ground Work Orders",
+            },
+            "ref": null,
+            "rendered": "Perfectly Ground Work Orders",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "Instructional text would go here - Lorem ipsum dolo sit amet, consecteur adipiscing elit. Nallam feugiat libero eget diam.",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="coffee"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Coffee 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="coffee"
+                    onChange={[MockFunction]}
+                    value="Choose One"
+                  >
+                    <option
+                      hidden={true}
+                      value="Choose One"
+                    >
+                      Choose One
+                    </option>
+                    <option
+                      value="Bella Donovan"
+                    >
+                      Bella Donovan
+                    </option>
+                    <option
+                      value="Giant Steps"
+                    >
+                      Giant Steps
+                    </option>
+                  </FormControl>
+                </FormGroup>,
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="method"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Brew Method 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="select"
+                    name="method"
+                    onChange={[MockFunction]}
+                    value="Choose One"
+                  >
+                    <option
+                      hidden={true}
+                      value="Choose One"
+                    >
+                      Choose One
+                    </option>
+                    <option
+                      value="AeroPress"
+                    >
+                      AeroPress
+                    </option>
+                    <option
+                      value="Coffee Maker"
+                    >
+                      Coffee Maker
+                    </option>
+                    <option
+                      value="Cold Brew"
+                    >
+                      Cold Brew
+                    </option>
+                    <option
+                      value="French Press"
+                    >
+                      French Press
+                    </option>
+                    <option
+                      value="Pour Over"
+                    >
+                      Pour Over
+                    </option>
+                  </FormControl>
+                </FormGroup>,
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="date"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Ship Date 
+                    <span
+                      className="Red"
+                    >
+                      *
+                    </span>
+                  </ControlLabel>
+                  <DateTime
+                    className=""
+                    closeOnSelect={true}
+                    closeOnTab={true}
+                    dateFormat="MM/DD/YYYY"
+                    defaultValue=""
+                    input={true}
+                    inputProps={Object {}}
+                    isValidDate={[Function]}
+                    onBlur={[Function]}
+                    onChange={[MockFunction]}
+                    onFocus={[Function]}
+                    onNavigateBack={[Function]}
+                    onNavigateForward={[Function]}
+                    onViewModeChange={[Function]}
+                    strictParsing={true}
+                    timeConstraints={Object {}}
+                    timeFormat={false}
+                    utc={false}
+                    value=""
+                  />
+                </FormGroup>,
+                <div
+                  className="SmallInputs"
+                >
+                  <FormGroup
+                    bsClass="form-group"
+                    controlId="cases"
+                  >
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Number of Cases 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="cases"
+                      onChange={[MockFunction]}
+                      value="#"
+                    >
+                      <option
+                        hidden={true}
+                        value="#"
+                      >
+                        #
+                      </option>
+                      <option
+                        value="1"
+                      >
+                        1
+                      </option>
+                      <option
+                        value="5"
+                      >
+                        5
+                      </option>
+                      <option
+                        value="10"
+                      >
+                        10
+                      </option>
+                      <option
+                        value="20"
+                      >
+                        20
+                      </option>
+                      <option
+                        value="50"
+                      >
+                        50
+                      </option>
+                      <option
+                        value="100"
+                      >
+                        100
+                      </option>
+                    </FormControl>
+                  </FormGroup>
+                  <FormGroup
+                    bsClass="form-group"
+                    controlId="packets"
+                  >
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Packets per Case 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="packets"
+                      onChange={[MockFunction]}
+                      value="25"
+                    >
+                      <option
+                        value="25"
+                      >
+                        25
+                      </option>
+                      <option
+                        value="50"
+                      >
+                        50
+                      </option>
+                    </FormControl>
+                  </FormGroup>
+                </div>,
+                <FormGroup
+                  bsClass="form-group"
+                  bsSize="small"
+                  controlId="notes"
+                >
+                  <ControlLabel
+                    bsClass="control-label"
+                    srOnly={false}
+                  >
+                    Notes
+                  </ControlLabel>
+                  <FormControl
+                    bsClass="form-control"
+                    componentClass="input"
+                    name="notes"
+                    onChange={[MockFunction]}
+                    type="text"
+                    value=""
+                  />
+                </FormGroup>,
+                <FormGroup
+                  bsClass="form-group"
+                >
+                  <Checkbox
+                    bsClass="checkbox"
+                    disabled={false}
+                    id="priority"
+                    inline={false}
+                    name="priority"
+                    onChange={[MockFunction]}
+                    title=""
+                    value={false}
+                  >
+                    Priority
+                  </Checkbox>
+                </FormGroup>,
+              ],
+              "id": "workOrderForm",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "children": Array [
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Coffee 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>,
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="coffee"
+                      onChange={[MockFunction]}
+                      value="Choose One"
+                    >
+                      <option
+                        hidden={true}
+                        value="Choose One"
+                      >
+                        Choose One
+                      </option>
+                      <option
+                        value="Bella Donovan"
+                      >
+                        Bella Donovan
+                      </option>
+                      <option
+                        value="Giant Steps"
+                      >
+                        Giant Steps
+                      </option>
+                    </FormControl>,
+                  ],
+                  "controlId": "coffee",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "control-label",
+                      "children": Array [
+                        "Coffee ",
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>,
+                      ],
+                      "srOnly": false,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Coffee ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "*",
+                          "className": "Red",
+                        },
+                        "ref": null,
+                        "rendered": "*",
+                        "type": "span",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "form-control",
+                      "children": Array [
+                        <option
+                          hidden={true}
+                          value="Choose One"
+                        >
+                          Choose One
+                        </option>,
+                        <option
+                          value="Bella Donovan"
+                        >
+                          Bella Donovan
+                        </option>,
+                        <option
+                          value="Giant Steps"
+                        >
+                          Giant Steps
+                        </option>,
+                      ],
+                      "componentClass": "select",
+                      "name": "coffee",
+                      "onChange": [MockFunction],
+                      "value": "Choose One",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Choose One",
+                          "hidden": true,
+                          "value": "Choose One",
+                        },
+                        "ref": null,
+                        "rendered": "Choose One",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Bella Donovan",
+                          "value": "Bella Donovan",
+                        },
+                        "ref": null,
+                        "rendered": "Bella Donovan",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Giant Steps",
+                          "value": "Giant Steps",
+                        },
+                        "ref": null,
+                        "rendered": "Giant Steps",
+                        "type": "option",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "children": Array [
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Brew Method 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>,
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="select"
+                      name="method"
+                      onChange={[MockFunction]}
+                      value="Choose One"
+                    >
+                      <option
+                        hidden={true}
+                        value="Choose One"
+                      >
+                        Choose One
+                      </option>
+                      <option
+                        value="AeroPress"
+                      >
+                        AeroPress
+                      </option>
+                      <option
+                        value="Coffee Maker"
+                      >
+                        Coffee Maker
+                      </option>
+                      <option
+                        value="Cold Brew"
+                      >
+                        Cold Brew
+                      </option>
+                      <option
+                        value="French Press"
+                      >
+                        French Press
+                      </option>
+                      <option
+                        value="Pour Over"
+                      >
+                        Pour Over
+                      </option>
+                    </FormControl>,
+                  ],
+                  "controlId": "method",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "control-label",
+                      "children": Array [
+                        "Brew Method ",
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>,
+                      ],
+                      "srOnly": false,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Brew Method ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "*",
+                          "className": "Red",
+                        },
+                        "ref": null,
+                        "rendered": "*",
+                        "type": "span",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "form-control",
+                      "children": Array [
+                        <option
+                          hidden={true}
+                          value="Choose One"
+                        >
+                          Choose One
+                        </option>,
+                        <option
+                          value="AeroPress"
+                        >
+                          AeroPress
+                        </option>,
+                        <option
+                          value="Coffee Maker"
+                        >
+                          Coffee Maker
+                        </option>,
+                        <option
+                          value="Cold Brew"
+                        >
+                          Cold Brew
+                        </option>,
+                        <option
+                          value="French Press"
+                        >
+                          French Press
+                        </option>,
+                        <option
+                          value="Pour Over"
+                        >
+                          Pour Over
+                        </option>,
+                      ],
+                      "componentClass": "select",
+                      "name": "method",
+                      "onChange": [MockFunction],
+                      "value": "Choose One",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Choose One",
+                          "hidden": true,
+                          "value": "Choose One",
+                        },
+                        "ref": null,
+                        "rendered": "Choose One",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "AeroPress",
+                          "value": "AeroPress",
+                        },
+                        "ref": null,
+                        "rendered": "AeroPress",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Coffee Maker",
+                          "value": "Coffee Maker",
+                        },
+                        "ref": null,
+                        "rendered": "Coffee Maker",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Cold Brew",
+                          "value": "Cold Brew",
+                        },
+                        "ref": null,
+                        "rendered": "Cold Brew",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "French Press",
+                          "value": "French Press",
+                        },
+                        "ref": null,
+                        "rendered": "French Press",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Pour Over",
+                          "value": "Pour Over",
+                        },
+                        "ref": null,
+                        "rendered": "Pour Over",
+                        "type": "option",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "children": Array [
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Ship Date 
+                      <span
+                        className="Red"
+                      >
+                        *
+                      </span>
+                    </ControlLabel>,
+                    <DateTime
+                      className=""
+                      closeOnSelect={true}
+                      closeOnTab={true}
+                      dateFormat="MM/DD/YYYY"
+                      defaultValue=""
+                      input={true}
+                      inputProps={Object {}}
+                      isValidDate={[Function]}
+                      onBlur={[Function]}
+                      onChange={[MockFunction]}
+                      onFocus={[Function]}
+                      onNavigateBack={[Function]}
+                      onNavigateForward={[Function]}
+                      onViewModeChange={[Function]}
+                      strictParsing={true}
+                      timeConstraints={Object {}}
+                      timeFormat={false}
+                      utc={false}
+                      value=""
+                    />,
+                  ],
+                  "controlId": "date",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "control-label",
+                      "children": Array [
+                        "Ship Date ",
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>,
+                      ],
+                      "srOnly": false,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Ship Date ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "*",
+                          "className": "Red",
+                        },
+                        "ref": null,
+                        "rendered": "*",
+                        "type": "span",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "",
+                      "closeOnSelect": true,
+                      "closeOnTab": true,
+                      "dateFormat": "MM/DD/YYYY",
+                      "defaultValue": "",
+                      "input": true,
+                      "inputProps": Object {},
+                      "isValidDate": [Function],
+                      "onBlur": [Function],
+                      "onChange": [MockFunction],
+                      "onFocus": [Function],
+                      "onNavigateBack": [Function],
+                      "onNavigateForward": [Function],
+                      "onViewModeChange": [Function],
+                      "strictParsing": true,
+                      "timeConstraints": Object {},
+                      "timeFormat": false,
+                      "utc": false,
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <FormGroup
+                      bsClass="form-group"
+                      controlId="cases"
+                    >
+                      <ControlLabel
+                        bsClass="control-label"
+                        srOnly={false}
+                      >
+                        Number of Cases 
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>
+                      </ControlLabel>
+                      <FormControl
+                        bsClass="form-control"
+                        componentClass="select"
+                        name="cases"
+                        onChange={[MockFunction]}
+                        value="#"
+                      >
+                        <option
+                          hidden={true}
+                          value="#"
+                        >
+                          #
+                        </option>
+                        <option
+                          value="1"
+                        >
+                          1
+                        </option>
+                        <option
+                          value="5"
+                        >
+                          5
+                        </option>
+                        <option
+                          value="10"
+                        >
+                          10
+                        </option>
+                        <option
+                          value="20"
+                        >
+                          20
+                        </option>
+                        <option
+                          value="50"
+                        >
+                          50
+                        </option>
+                        <option
+                          value="100"
+                        >
+                          100
+                        </option>
+                      </FormControl>
+                    </FormGroup>,
+                    <FormGroup
+                      bsClass="form-group"
+                      controlId="packets"
+                    >
+                      <ControlLabel
+                        bsClass="control-label"
+                        srOnly={false}
+                      >
+                        Packets per Case 
+                        <span
+                          className="Red"
+                        >
+                          *
+                        </span>
+                      </ControlLabel>
+                      <FormControl
+                        bsClass="form-control"
+                        componentClass="select"
+                        name="packets"
+                        onChange={[MockFunction]}
+                        value="25"
+                      >
+                        <option
+                          value="25"
+                        >
+                          25
+                        </option>
+                        <option
+                          value="50"
+                        >
+                          50
+                        </option>
+                      </FormControl>
+                    </FormGroup>,
+                  ],
+                  "className": "SmallInputs",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "form-group",
+                      "children": Array [
+                        <ControlLabel
+                          bsClass="control-label"
+                          srOnly={false}
+                        >
+                          Number of Cases 
+                          <span
+                            className="Red"
+                          >
+                            *
+                          </span>
+                        </ControlLabel>,
+                        <FormControl
+                          bsClass="form-control"
+                          componentClass="select"
+                          name="cases"
+                          onChange={[MockFunction]}
+                          value="#"
+                        >
+                          <option
+                            hidden={true}
+                            value="#"
+                          >
+                            #
+                          </option>
+                          <option
+                            value="1"
+                          >
+                            1
+                          </option>
+                          <option
+                            value="5"
+                          >
+                            5
+                          </option>
+                          <option
+                            value="10"
+                          >
+                            10
+                          </option>
+                          <option
+                            value="20"
+                          >
+                            20
+                          </option>
+                          <option
+                            value="50"
+                          >
+                            50
+                          </option>
+                          <option
+                            value="100"
+                          >
+                            100
+                          </option>
+                        </FormControl>,
+                      ],
+                      "controlId": "cases",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "control-label",
+                          "children": Array [
+                            "Number of Cases ",
+                            <span
+                              className="Red"
+                            >
+                              *
+                            </span>,
+                          ],
+                          "srOnly": false,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Number of Cases ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "Red",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "form-control",
+                          "children": Array [
+                            <option
+                              hidden={true}
+                              value="#"
+                            >
+                              #
+                            </option>,
+                            <option
+                              value="1"
+                            >
+                              1
+                            </option>,
+                            <option
+                              value="5"
+                            >
+                              5
+                            </option>,
+                            <option
+                              value="10"
+                            >
+                              10
+                            </option>,
+                            <option
+                              value="20"
+                            >
+                              20
+                            </option>,
+                            <option
+                              value="50"
+                            >
+                              50
+                            </option>,
+                            <option
+                              value="100"
+                            >
+                              100
+                            </option>,
+                          ],
+                          "componentClass": "select",
+                          "name": "cases",
+                          "onChange": [MockFunction],
+                          "value": "#",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "#",
+                              "hidden": true,
+                              "value": "#",
+                            },
+                            "ref": null,
+                            "rendered": "#",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "1",
+                              "value": "1",
+                            },
+                            "ref": null,
+                            "rendered": "1",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "5",
+                              "value": "5",
+                            },
+                            "ref": null,
+                            "rendered": "5",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "10",
+                              "value": "10",
+                            },
+                            "ref": null,
+                            "rendered": "10",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "20",
+                              "value": "20",
+                            },
+                            "ref": null,
+                            "rendered": "20",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "50",
+                              "value": "50",
+                            },
+                            "ref": null,
+                            "rendered": "50",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "100",
+                              "value": "100",
+                            },
+                            "ref": null,
+                            "rendered": "100",
+                            "type": "option",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "form-group",
+                      "children": Array [
+                        <ControlLabel
+                          bsClass="control-label"
+                          srOnly={false}
+                        >
+                          Packets per Case 
+                          <span
+                            className="Red"
+                          >
+                            *
+                          </span>
+                        </ControlLabel>,
+                        <FormControl
+                          bsClass="form-control"
+                          componentClass="select"
+                          name="packets"
+                          onChange={[MockFunction]}
+                          value="25"
+                        >
+                          <option
+                            value="25"
+                          >
+                            25
+                          </option>
+                          <option
+                            value="50"
+                          >
+                            50
+                          </option>
+                        </FormControl>,
+                      ],
+                      "controlId": "packets",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "control-label",
+                          "children": Array [
+                            "Packets per Case ",
+                            <span
+                              className="Red"
+                            >
+                              *
+                            </span>,
+                          ],
+                          "srOnly": false,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Packets per Case ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "Red",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "form-control",
+                          "children": Array [
+                            <option
+                              value="25"
+                            >
+                              25
+                            </option>,
+                            <option
+                              value="50"
+                            >
+                              50
+                            </option>,
+                          ],
+                          "componentClass": "select",
+                          "name": "packets",
+                          "onChange": [MockFunction],
+                          "value": "25",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "25",
+                              "value": "25",
+                            },
+                            "ref": null,
+                            "rendered": "25",
+                            "type": "option",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "50",
+                              "value": "50",
+                            },
+                            "ref": null,
+                            "rendered": "50",
+                            "type": "option",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "bsSize": "small",
+                  "children": Array [
+                    <ControlLabel
+                      bsClass="control-label"
+                      srOnly={false}
+                    >
+                      Notes
+                    </ControlLabel>,
+                    <FormControl
+                      bsClass="form-control"
+                      componentClass="input"
+                      name="notes"
+                      onChange={[MockFunction]}
+                      type="text"
+                      value=""
+                    />,
+                  ],
+                  "controlId": "notes",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "control-label",
+                      "children": "Notes",
+                      "srOnly": false,
+                    },
+                    "ref": null,
+                    "rendered": "Notes",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "form-control",
+                      "componentClass": "input",
+                      "name": "notes",
+                      "onChange": [MockFunction],
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "children": <Checkbox
+                    bsClass="checkbox"
+                    disabled={false}
+                    id="priority"
+                    inline={false}
+                    name="priority"
+                    onChange={[MockFunction]}
+                    title=""
+                    value={false}
+                  >
+                    Priority
+                  </Checkbox>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "checkbox",
+                    "children": "Priority",
+                    "disabled": false,
+                    "id": "priority",
+                    "inline": false,
+                    "name": "priority",
+                    "onChange": [MockFunction],
+                    "title": "",
+                    "value": false,
+                  },
+                  "ref": null,
+                  "rendered": "Priority",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "form",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "error": "Test Error",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SUBMIT WORK ORDER",
+              "id": "submit",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "SUBMIT WORK ORDER",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -31,7 +31,7 @@
 
 .ModalBody {
   width: 600px;
-  height: 520px;
+  min-height: 520px;
   margin: 16px auto;
   color: #555555;
   font-size: 14px;
@@ -93,15 +93,6 @@ label {
   margin-bottom: 5px;
 }
 
-.SmallSelect {
-  width: 132px;
-}
-
-.Inputs {
-  width: 286px;
-  margin-top: 32px;
-}
-
 .SmallInputs {
   width: 284px;
   display: flex;
@@ -115,4 +106,10 @@ label {
 
 .form-group {
   margin-bottom: 25px;
+}
+
+.rdt input {
+  border-radius: 0px;
+  width: 260px;
+  height: 22px;
 }
