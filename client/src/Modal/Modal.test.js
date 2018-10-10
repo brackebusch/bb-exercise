@@ -7,17 +7,16 @@ const saveAndClose = jest.fn()
 const handleInputChange = jest.fn()
 const setDate = jest.fn()
 const setError = jest.fn()
-const checkForm = jest.fn()
 const showModal = true
 const error = 'Test Error'
 const workOrder = {
-    coffee: 'Choose One',
-    method: 'Choose One',      
-    ship_date: '',
-    cases: '#',
-    packets: '25',
-    notes: '',
-    priority: false,
+  coffee: 'Giant Steps',
+  method: 'Cold Brew',      
+  ship_date: '10/08/2018',
+  cases: '25',
+  packets: '25',
+  notes: '',
+  priority: true,
 }
 
 it('renders without crashing', () => {
@@ -74,7 +73,40 @@ it("renders errors", () => {
   expect(text).toContain('Test Error');
 });
 
-it("checks if fields are valid on button click", () => {
+it('calls handleInputChange with input change', () => {
+  const wrapper = mount(
+    <ModalView  showModal={showModal} 
+                changeModalState={changeModalState}
+                saveAndClose={saveAndClose}
+                handleInputChange={handleInputChange}
+                setError={setError}
+                error={error}
+                setDate={setDate}
+                workOrder={workOrder}/>
+  );
+  wrapper.find('#notes').simulate('change', {target: {value: 'Notes about order'}});
+
+  expect(handleInputChange).toBeCalled();
+});
+
+
+it('calls changeModalState on close', () => {
+  const wrapper = mount(
+    <ModalView  showModal={showModal} 
+                changeModalState={changeModalState}
+                saveAndClose={saveAndClose}
+                handleInputChange={handleInputChange}
+                setError={setError}
+                error={error}
+                setDate={setDate}
+                workOrder={workOrder}/>
+  );
+  wrapper.find('.Close').simulate('click');
+
+  expect(changeModalState).toBeCalled();
+});
+
+it("submits form if all fields are filled out", () => {
   const wrapper = mount(
     <ModalView  showModal={showModal} 
                 changeModalState={changeModalState}
@@ -86,24 +118,29 @@ it("checks if fields are valid on button click", () => {
                 workOrder={workOrder}/>
   );
 
-  wrapper
-    .find("button")
-    .simulate("click");
+  wrapper.find("button").simulate("click");
 
-  // expect(button).toHaveLength(1);
   expect(saveAndClose).toBeCalled();
 });
 
-// it('input fields should be filled correctly', () => {
-//   const credentials = { username: 'leongaban', password: 'testpass' };
-//   expect(loginComponent.find('#input-auth-username').length).toBe(1);
+it("checks if fields are valid on button click", () => {
+  let errorOrder = Object.assign({}, workOrder)
+  errorOrder.cases = '#';
+  const wrapper = mount(
+    <ModalView  showModal={showModal} 
+                changeModalState={changeModalState}
+                saveAndClose={saveAndClose}
+                handleInputChange={handleInputChange}
+                setError={setError}
+                error={error}
+                setDate={setDate}
+                workOrder={errorOrder}/>
+  );
 
-//   const usernameInput = loginComponent.find('#input-auth-username');
-//   usernameInput.value = credentials.username;
-//   expect(usernameInput.value).toBe('leongaban');
+  wrapper.find("button").simulate("click");
 
-//   const passwordInput = loginComponent.find('#input-auth-password');
-//   passwordInput.value = credentials.password;
-//   expect(passwordInput.value).toBe('testpass');
-// });
+  expect(setError).toBeCalled();
+});
+
+
 

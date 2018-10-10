@@ -36,11 +36,14 @@ class App extends Component {
 
   //fetch data for rendering
   async componentDidMount(){
-    const response = await fetch('/work_orders');
-    const workOrders = await response.json();
-    console.log(workOrders.slice(0, 25));
-    
-    this.setState({workOrders});
+    try {
+      const response = await fetch('/work_orders');
+      const workOrders = await response.json();
+      this.setState({workOrders});
+    } catch (error) {
+      alert(error)
+      this.setState({error})
+    }
   }
 
   //for sorting table data asc or desc
@@ -111,7 +114,6 @@ class App extends Component {
         },
       }
     } = this;
-
 
     (async () => {
       const rawResponse = await fetch('/work_orders', {

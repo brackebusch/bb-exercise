@@ -13,13 +13,13 @@ ShallowWrapper {
     showModal={true}
     workOrder={
       Object {
-        "cases": "#",
-        "coffee": "Choose One",
-        "method": "Choose One",
+        "cases": "25",
+        "coffee": "Giant Steps",
+        "method": "Cold Brew",
         "notes": "",
         "packets": "25",
-        "priority": false,
-        "ship_date": "",
+        "priority": true,
+        "ship_date": "10/08/2018",
       }
     }
   />,
@@ -77,7 +77,7 @@ ShallowWrapper {
               componentClass="select"
               name="coffee"
               onChange={[MockFunction]}
-              value="Choose One"
+              value="Giant Steps"
             >
               <option
                 hidden={true}
@@ -117,7 +117,7 @@ ShallowWrapper {
               componentClass="select"
               name="method"
               onChange={[MockFunction]}
-              value="Choose One"
+              value="Cold Brew"
             >
               <option
                 hidden={true}
@@ -186,7 +186,7 @@ ShallowWrapper {
               timeConstraints={Object {}}
               timeFormat={false}
               utc={false}
-              value=""
+              value="10/08/2018"
             />
           </FormGroup>
           <div
@@ -212,7 +212,7 @@ ShallowWrapper {
                 componentClass="select"
                 name="cases"
                 onChange={[MockFunction]}
-                value="#"
+                value="25"
               >
                 <option
                   hidden={true}
@@ -318,7 +318,7 @@ ShallowWrapper {
               name="priority"
               onChange={[MockFunction]}
               title=""
-              value={false}
+              value={true}
             >
               Priority
             </Checkbox>
@@ -394,7 +394,7 @@ ShallowWrapper {
                 componentClass="select"
                 name="coffee"
                 onChange={[MockFunction]}
-                value="Choose One"
+                value="Giant Steps"
               >
                 <option
                   hidden={true}
@@ -434,7 +434,7 @@ ShallowWrapper {
                 componentClass="select"
                 name="method"
                 onChange={[MockFunction]}
-                value="Choose One"
+                value="Cold Brew"
               >
                 <option
                   hidden={true}
@@ -503,7 +503,7 @@ ShallowWrapper {
                 timeConstraints={Object {}}
                 timeFormat={false}
                 utc={false}
-                value=""
+                value="10/08/2018"
               />
             </FormGroup>
             <div
@@ -529,7 +529,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="cases"
                   onChange={[MockFunction]}
-                  value="#"
+                  value="25"
                 >
                   <option
                     hidden={true}
@@ -635,7 +635,7 @@ ShallowWrapper {
                 name="priority"
                 onChange={[MockFunction]}
                 title=""
-                value={false}
+                value={true}
               >
                 Priority
               </Checkbox>
@@ -715,7 +715,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="coffee"
                   onChange={[MockFunction]}
-                  value="Choose One"
+                  value="Giant Steps"
                 >
                   <option
                     hidden={true}
@@ -755,7 +755,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="method"
                   onChange={[MockFunction]}
-                  value="Choose One"
+                  value="Cold Brew"
                 >
                   <option
                     hidden={true}
@@ -824,7 +824,7 @@ ShallowWrapper {
                   timeConstraints={Object {}}
                   timeFormat={false}
                   utc={false}
-                  value=""
+                  value="10/08/2018"
                 />
               </FormGroup>,
               <div
@@ -850,7 +850,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="cases"
                     onChange={[MockFunction]}
-                    value="#"
+                    value="25"
                   >
                     <option
                       hidden={true}
@@ -956,7 +956,7 @@ ShallowWrapper {
                   name="priority"
                   onChange={[MockFunction]}
                   title=""
-                  value={false}
+                  value={true}
                 >
                   Priority
                 </Checkbox>
@@ -989,7 +989,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="coffee"
                     onChange={[MockFunction]}
-                    value="Choose One"
+                    value="Giant Steps"
                   >
                     <option
                       hidden={true}
@@ -1074,7 +1074,7 @@ ShallowWrapper {
                     "componentClass": "select",
                     "name": "coffee",
                     "onChange": [MockFunction],
-                    "value": "Choose One",
+                    "value": "Giant Steps",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -1144,7 +1144,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="method"
                     onChange={[MockFunction]}
-                    value="Choose One"
+                    value="Cold Brew"
                   >
                     <option
                       hidden={true}
@@ -1259,7 +1259,7 @@ ShallowWrapper {
                     "componentClass": "select",
                     "name": "method",
                     "onChange": [MockFunction],
-                    "value": "Choose One",
+                    "value": "Cold Brew",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -1379,7 +1379,7 @@ ShallowWrapper {
                     timeConstraints={Object {}}
                     timeFormat={false}
                     utc={false}
-                    value=""
+                    value="10/08/2018"
                   />,
                 ],
                 "controlId": "date",
@@ -1443,7 +1443,7 @@ ShallowWrapper {
                     "timeConstraints": Object {},
                     "timeFormat": false,
                     "utc": false,
-                    "value": "",
+                    "value": "10/08/2018",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1478,7 +1478,7 @@ ShallowWrapper {
                       componentClass="select"
                       name="cases"
                       onChange={[MockFunction]}
-                      value="#"
+                      value="25"
                     >
                       <option
                         hidden={true}
@@ -1580,7 +1580,7 @@ ShallowWrapper {
                         componentClass="select"
                         name="cases"
                         onChange={[MockFunction]}
-                        value="#"
+                        value="25"
                       >
                         <option
                           hidden={true}
@@ -1705,7 +1705,7 @@ ShallowWrapper {
                         "componentClass": "select",
                         "name": "cases",
                         "onChange": [MockFunction],
-                        "value": "#",
+                        "value": "25",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -2006,7 +2006,7 @@ ShallowWrapper {
                   name="priority"
                   onChange={[MockFunction]}
                   title=""
-                  value={false}
+                  value={true}
                 >
                   Priority
                 </Checkbox>,
@@ -2025,7 +2025,7 @@ ShallowWrapper {
                   "name": "priority",
                   "onChange": [MockFunction],
                   "title": "",
-                  "value": false,
+                  "value": true,
                 },
                 "ref": null,
                 "rendered": "Priority",
@@ -2112,7 +2112,7 @@ ShallowWrapper {
                 componentClass="select"
                 name="coffee"
                 onChange={[MockFunction]}
-                value="Choose One"
+                value="Giant Steps"
               >
                 <option
                   hidden={true}
@@ -2152,7 +2152,7 @@ ShallowWrapper {
                 componentClass="select"
                 name="method"
                 onChange={[MockFunction]}
-                value="Choose One"
+                value="Cold Brew"
               >
                 <option
                   hidden={true}
@@ -2221,7 +2221,7 @@ ShallowWrapper {
                 timeConstraints={Object {}}
                 timeFormat={false}
                 utc={false}
-                value=""
+                value="10/08/2018"
               />
             </FormGroup>
             <div
@@ -2247,7 +2247,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="cases"
                   onChange={[MockFunction]}
-                  value="#"
+                  value="25"
                 >
                   <option
                     hidden={true}
@@ -2353,7 +2353,7 @@ ShallowWrapper {
                 name="priority"
                 onChange={[MockFunction]}
                 title=""
-                value={false}
+                value={true}
               >
                 Priority
               </Checkbox>
@@ -2429,7 +2429,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="coffee"
                   onChange={[MockFunction]}
-                  value="Choose One"
+                  value="Giant Steps"
                 >
                   <option
                     hidden={true}
@@ -2469,7 +2469,7 @@ ShallowWrapper {
                   componentClass="select"
                   name="method"
                   onChange={[MockFunction]}
-                  value="Choose One"
+                  value="Cold Brew"
                 >
                   <option
                     hidden={true}
@@ -2538,7 +2538,7 @@ ShallowWrapper {
                   timeConstraints={Object {}}
                   timeFormat={false}
                   utc={false}
-                  value=""
+                  value="10/08/2018"
                 />
               </FormGroup>
               <div
@@ -2564,7 +2564,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="cases"
                     onChange={[MockFunction]}
-                    value="#"
+                    value="25"
                   >
                     <option
                       hidden={true}
@@ -2670,7 +2670,7 @@ ShallowWrapper {
                   name="priority"
                   onChange={[MockFunction]}
                   title=""
-                  value={false}
+                  value={true}
                 >
                   Priority
                 </Checkbox>
@@ -2750,7 +2750,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="coffee"
                     onChange={[MockFunction]}
-                    value="Choose One"
+                    value="Giant Steps"
                   >
                     <option
                       hidden={true}
@@ -2790,7 +2790,7 @@ ShallowWrapper {
                     componentClass="select"
                     name="method"
                     onChange={[MockFunction]}
-                    value="Choose One"
+                    value="Cold Brew"
                   >
                     <option
                       hidden={true}
@@ -2859,7 +2859,7 @@ ShallowWrapper {
                     timeConstraints={Object {}}
                     timeFormat={false}
                     utc={false}
-                    value=""
+                    value="10/08/2018"
                   />
                 </FormGroup>,
                 <div
@@ -2885,7 +2885,7 @@ ShallowWrapper {
                       componentClass="select"
                       name="cases"
                       onChange={[MockFunction]}
-                      value="#"
+                      value="25"
                     >
                       <option
                         hidden={true}
@@ -2991,7 +2991,7 @@ ShallowWrapper {
                     name="priority"
                     onChange={[MockFunction]}
                     title=""
-                    value={false}
+                    value={true}
                   >
                     Priority
                   </Checkbox>
@@ -3024,7 +3024,7 @@ ShallowWrapper {
                       componentClass="select"
                       name="coffee"
                       onChange={[MockFunction]}
-                      value="Choose One"
+                      value="Giant Steps"
                     >
                       <option
                         hidden={true}
@@ -3109,7 +3109,7 @@ ShallowWrapper {
                       "componentClass": "select",
                       "name": "coffee",
                       "onChange": [MockFunction],
-                      "value": "Choose One",
+                      "value": "Giant Steps",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -3179,7 +3179,7 @@ ShallowWrapper {
                       componentClass="select"
                       name="method"
                       onChange={[MockFunction]}
-                      value="Choose One"
+                      value="Cold Brew"
                     >
                       <option
                         hidden={true}
@@ -3294,7 +3294,7 @@ ShallowWrapper {
                       "componentClass": "select",
                       "name": "method",
                       "onChange": [MockFunction],
-                      "value": "Choose One",
+                      "value": "Cold Brew",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -3414,7 +3414,7 @@ ShallowWrapper {
                       timeConstraints={Object {}}
                       timeFormat={false}
                       utc={false}
-                      value=""
+                      value="10/08/2018"
                     />,
                   ],
                   "controlId": "date",
@@ -3478,7 +3478,7 @@ ShallowWrapper {
                       "timeConstraints": Object {},
                       "timeFormat": false,
                       "utc": false,
-                      "value": "",
+                      "value": "10/08/2018",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3513,7 +3513,7 @@ ShallowWrapper {
                         componentClass="select"
                         name="cases"
                         onChange={[MockFunction]}
-                        value="#"
+                        value="25"
                       >
                         <option
                           hidden={true}
@@ -3615,7 +3615,7 @@ ShallowWrapper {
                           componentClass="select"
                           name="cases"
                           onChange={[MockFunction]}
-                          value="#"
+                          value="25"
                         >
                           <option
                             hidden={true}
@@ -3740,7 +3740,7 @@ ShallowWrapper {
                           "componentClass": "select",
                           "name": "cases",
                           "onChange": [MockFunction],
-                          "value": "#",
+                          "value": "25",
                         },
                         "ref": null,
                         "rendered": Array [
@@ -4041,7 +4041,7 @@ ShallowWrapper {
                     name="priority"
                     onChange={[MockFunction]}
                     title=""
-                    value={false}
+                    value={true}
                   >
                     Priority
                   </Checkbox>,
@@ -4060,7 +4060,7 @@ ShallowWrapper {
                     "name": "priority",
                     "onChange": [MockFunction],
                     "title": "",
-                    "value": false,
+                    "value": true,
                   },
                   "ref": null,
                   "rendered": "Priority",
