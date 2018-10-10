@@ -28,13 +28,23 @@ RSpec.describe WorkOrdersController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # WorkOrder. As you add validations to WorkOrder, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+  let(:valid_attributes) {{
+      coffee: 'Giant Steps',
+      method: 'Cold Brew',      
+      ship_date: Date.new(2020,2,3),
+      cases: '25',
+      packets: '25',
+      notes: 'Yay notes!',
+      priority: true
+  }}
 
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+  let(:invalid_attributes) {{
+    coffee: 'Starbucks',
+    method: 'Milkshake',      
+    ship_date: '10/20/2017',
+    cases: 'No cases',
+    packets: '0'
+  }}
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -86,9 +96,15 @@ RSpec.describe WorkOrdersController, type: :controller do
 
   describe "PUT #update" do
     context "with valid params" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
+      let(:new_attributes) {{
+        coffee: 'Bella Donovan',
+        method: 'Coffee Maker',      
+        ship_date: Date.new(2021,2,3),
+        cases: '1',
+        packets: '50',
+        notes: '',
+        priority: false
+    }}
 
       it "updates the requested work_order" do
         work_order = WorkOrder.create! valid_attributes

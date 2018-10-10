@@ -10,14 +10,14 @@ Open new terminal window
 2.	`npm install`
 3.	` npm start`
 
-This will launch application at http://localhost:3000/ API calls are made via proxy to http://localhost:3001/. Testing can be run via `npm test` or `rspec [folder name]` in respective parent folders (`client` or `bb_exercise`). 
+This will launch application at http://localhost:3000/ API calls are made via proxy to http://localhost:3001/. Testing can be run via `npm test` or `bundle exec rspec` in respective parent folders (`client` or `bb_exercise`). There are 42 tests right now, and I would add a few more given more time.
 
 ----
 ### Architecture 
 **Stack**: PostgreSQL , Rails API (Rails v5.2.1 Ruby 2.5.0), React (v16.5.2), Bootstrap (v3) for some UI
 A single table containing orders is used in PostgreSQL, with all validations and data checking occurring in Rails. This takes into account rogue users who might somehow POST to the backend, or testers who might be using Postman and forget to point to a development environment =)
 
-React handles all the UI. It’s fast, popular, well documented, familiar to me as a developer, and this exercise is within the scope of Create React App so development was very quick. The frontend has only one stateful component, and all the others receive data via props. Redux and Context were unnecessary based on the scope of the project, and would really only add unnecessary complexity at the moment rather than serve as helpful tools.
+React handles all the UI. It’s fast, popular, well documented, familiar to me as a developer, and this exercise is within the scope of Create React App so development was very quick. The frontend has only one stateful component `<App />`, and all the others receive data via props. Redux and Context were unnecessary based on the scope of the project, and would add complexity at the moment rather than serve as helpful tools.
 
 ----
 ### Future Considerations
@@ -28,8 +28,7 @@ React handles all the UI. It’s fast, popular, well documented, familiar to me 
 
 ----
 ### Deployment 
-**Objective**: always deploy a new instance and leave what is working alive until new version is up and running. The motivation for this is to make sure we never take production down, and if we have any errors it is easier to roll back.
-Steps to deployment:
+**Objective**: Always deploy a new instance of application and leave what is working alive until new version is up and running. The motivation for this is to make sure we never take production down, and if we have any errors it is easier to rollback. Steps to deployment:
 1.	Make sure application is passing all tests locally.
 2.	Run build
 3.	Create new instance in AWS, Azure etc. to deploy to
